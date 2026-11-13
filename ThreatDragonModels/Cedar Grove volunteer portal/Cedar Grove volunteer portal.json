@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 190,
-              "y": 80
+              "x": 180,
+              "y": 270
             },
             "size": {
-              "width": 112.5,
-              "height": 60
+              "width": 140,
+              "height": 80
             },
             "attrs": {
               "text": {
@@ -138,14 +138,17 @@
           },
           {
             "position": {
-              "x": 500,
-              "y": 190
+              "x": 505,
+              "y": 380.00000000000057
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 360,
+              "height": 200
             },
             "attrs": {
+              "text": {
+                "text": "Delivery request web form"
+              },
               "body": {
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
@@ -240,7 +243,7 @@
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "Process",
+              "name": "Delivery request web form",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -251,13 +254,264 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
             },
-            "tools": {
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Delivery request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Delivery request"
+            ],
+            "id": "bbf87974-e6ee-4a52-b2e6-098b279ade7c",
+            "source": {
+              "x": 320,
+              "y": 310
+            },
+            "target": {
+              "x": 660,
+              "y": 390
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "6a58f6a8-f428-448a-8134-cfeb091457a3",
+            "source": {
+              "x": 670,
+              "y": 380
+            },
+            "target": {
+              "cell": "480806f1-fa89-47a1-9726-7f12ed0e68a7",
+              "port": "eeba3aff-897e-4b53-99e4-0f66f036fa0d"
+            }
+          },
+          {
+            "position": {
+              "x": 505,
+              "y": 20.000000000000853
+            },
+            "size": {
+              "width": 330,
+              "height": 190
+            },
+            "attrs": {
+              "text": {
+                "text": "External delivery\nconfirmation service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
               "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
+                {
+                  "group": "top",
+                  "id": "a379485d-3074-4bb5-9bbe-08191c3214a8"
+                },
+                {
+                  "group": "right",
+                  "id": "77cfb78f-12eb-4ab0-b52e-7a06574413f9"
+                },
+                {
+                  "group": "bottom",
+                  "id": "eeba3aff-897e-4b53-99e4-0f66f036fa0d"
+                },
+                {
+                  "group": "left",
+                  "id": "b5704192-245f-4d9d-89d4-9f408dcdef49"
+                }
+              ]
+            },
+            "id": "480806f1-fa89-47a1-9726-7f12ed0e68a7",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "External delivery\nconfirmation service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "4d44b39a-c855-4adc-9f91-dd2124c0bb7b",
+            "source": {
+              "x": 380,
+              "y": 90
+            },
+            "target": {
+              "x": 510,
+              "y": 250
             }
           }
         ]
