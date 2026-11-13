@@ -21,6 +21,37 @@
         "cells": [
           {
             "position": {
+              "x": 505,
+              "y": 330
+            },
+            "size": {
+              "width": 890,
+              "height": 350
+            },
+            "attrs": {
+              "label": {
+                "text": "Cedar Grove trust boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "41af0e45-445e-44c1-88cc-d5eab4bb9d90",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Cedar Grove trust boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "72f69cae-fbe6-440a-9e76-fe87ba311cfa",
+                "85c6b4a9-3c15-4030-8000-99424ceaa35a"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 180,
               "y": 270
             },
@@ -276,7 +307,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Delivery confirmation details",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -290,7 +321,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Delivery confirmation details"
             ],
             "id": "6a58f6a8-f428-448a-8134-cfeb091457a3",
             "source": {
@@ -300,7 +331,8 @@
             "target": {
               "cell": "480806f1-fa89-47a1-9726-7f12ed0e68a7",
               "port": "eeba3aff-897e-4b53-99e4-0f66f036fa0d"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -347,81 +379,21 @@
               "x": 580,
               "y": 460
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": [
+              {
+                "x": 380,
+                "y": 360
+              },
+              {
+                "x": 530,
+                "y": 440
+              }
+            ]
           },
           {
             "position": {
               "x": 505,
-              "y": 20.000000000000853
+              "y": 20
             },
             "size": {
               "width": 330,
@@ -558,6 +530,541 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Email notification",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Email notification"
+            ],
+            "id": "4d44b39a-c855-4adc-9f91-dd2124c0bb7b",
+            "source": {
+              "x": 580,
+              "y": 110
+            },
+            "target": {
+              "cell": "dcc1e6bb-0a57-48f7-ba7e-aedf55b75fc0",
+              "port": "69ac10fa-1198-44b9-92d4-11e9ab2a4ba1"
+            },
+            "vertices": [
+              {
+                "x": 440,
+                "y": 180
+              },
+              {
+                "x": 420,
+                "y": 180
+              },
+              {
+                "x": 390,
+                "y": 200
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 180,
+              "y": 380.00000000000057
+            },
+            "size": {
+              "width": 140,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Staff"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "69ac10fa-1198-44b9-92d4-11e9ab2a4ba1"
+                },
+                {
+                  "group": "right",
+                  "id": "63ac6e38-a556-4636-af64-bf9a6c825781"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b92802ed-e7d9-40f1-8a33-e0d18f0cf3c1"
+                },
+                {
+                  "group": "left",
+                  "id": "6d6ae268-b134-4f3c-a453-86e2332a9ab3"
+                }
+              ]
+            },
+            "id": "7940a370-b732-4ace-8b48-f123e194e77b",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Staff",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "zIndex": 13
+          },
+          {
+            "position": {
+              "x": 180,
+              "y": 482.00000000000057
+            },
+            "size": {
+              "width": 140,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Coordinator"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "69ac10fa-1198-44b9-92d4-11e9ab2a4ba1"
+                },
+                {
+                  "group": "right",
+                  "id": "63ac6e38-a556-4636-af64-bf9a6c825781"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b92802ed-e7d9-40f1-8a33-e0d18f0cf3c1"
+                },
+                {
+                  "group": "left",
+                  "id": "6d6ae268-b134-4f3c-a453-86e2332a9ab3"
+                }
+              ]
+            },
+            "id": "fdfba31d-5a72-4ea2-a4a5-1632d02cf15f",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Coordinator",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "zIndex": 14
+          },
+          {
+            "position": {
+              "x": 180,
+              "y": 580.0000000000006
+            },
+            "size": {
+              "width": 140,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Volunteers"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "69ac10fa-1198-44b9-92d4-11e9ab2a4ba1"
+                },
+                {
+                  "group": "right",
+                  "id": "63ac6e38-a556-4636-af64-bf9a6c825781"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b92802ed-e7d9-40f1-8a33-e0d18f0cf3c1"
+                },
+                {
+                  "group": "left",
+                  "id": "6d6ae268-b134-4f3c-a453-86e2332a9ab3"
+                }
+              ]
+            },
+            "id": "e0edf123-5a8c-4343-8f35-a73daac2b965",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Volunteers",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            },
+            "zIndex": 15
+          },
+          {
+            "position": {
+              "x": 1030,
+              "y": 405.00000000000057
+            },
+            "size": {
+              "width": 310,
+              "height": 150
+            },
+            "attrs": {
+              "text": {
+                "text": "Client Information Database\n\nHousehold names, addresses, contact details,\n delivery requests, confidential intake notes"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "fafc219f-7185-40fc-bb11-8cbc1ae76520"
+                },
+                {
+                  "group": "right",
+                  "id": "a1dcda07-9fed-4e1e-899e-217fd6e6be50"
+                },
+                {
+                  "group": "bottom",
+                  "id": "bb0fb77e-fd3e-4fc4-852a-a4fe0ecf2eca"
+                },
+                {
+                  "group": "left",
+                  "id": "f0e973b5-6830-4492-94a1-82f9d5f101da"
+                }
+              ]
+            },
+            "id": "85c6b4a9-3c15-4030-8000-99424ceaa35a",
+            "zIndex": 16,
+            "data": {
+              "type": "tm.Store",
+              "name": "Client Information Database\n\nHousehold names, addresses, contact details,\n delivery requests, confidential intake notes",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 17,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -574,21 +1081,45 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "4d44b39a-c855-4adc-9f91-dd2124c0bb7b",
+            "id": "a8d27fa8-4800-4324-bb90-2713bca8aa35",
             "source": {
-              "x": 580,
-              "y": 110
+              "x": 770,
+              "y": 410
             },
             "target": {
-              "cell": "dcc1e6bb-0a57-48f7-ba7e-aedf55b75fc0",
-              "port": "69ac10fa-1198-44b9-92d4-11e9ab2a4ba1"
+              "x": 1030,
+              "y": 410
             },
-            "vertices": [
-              {
-                "x": 440,
-                "y": 180
-              }
-            ]
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       }
