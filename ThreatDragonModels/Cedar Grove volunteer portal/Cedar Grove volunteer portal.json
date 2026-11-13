@@ -21,11 +21,11 @@
         "cells": [
           {
             "position": {
-              "x": 525,
-              "y": 160.00000000000057
+              "x": 460,
+              "y": 199.99999999999875
             },
             "size": {
-              "width": 890,
+              "width": 1340,
               "height": 680
             },
             "attrs": {
@@ -44,7 +44,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "768ee2d6-1383-42f1-8f5f-c92aea1ec25d",
+                "6a58f6a8-f428-448a-8134-cfeb091457a3",
+                "a3718d7c-f486-43e8-b4a7-6ef385ceb23c",
                 "de080c2d-b544-45f5-9635-2ded91800330",
                 "fa621b44-81b6-4471-8b31-4b73dd091382",
                 "33755aa8-2de3-42e7-a9b6-a637a6c54f60",
@@ -52,9 +53,17 @@
                 "dacd7c9a-d54d-4caa-86b0-3316a2bc463c"
               ],
               "containedElements": [
+                "72f69cae-fbe6-440a-9e76-fe87ba311cfa",
                 "85c6b4a9-3c15-4030-8000-99424ceaa35a",
                 "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -452,54 +461,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Review requests,\nUpdate household records,\nAssign deliveries",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "41af0e45-445e-44c1-88cc-d5eab4bb9d90"
-              ]
-            },
-            "labels": [
-              "Review requests,\nUpdate household records,\nAssign deliveries"
-            ],
-            "id": "768ee2d6-1383-42f1-8f5f-c92aea1ec25d",
-            "source": {
-              "x": 920,
-              "y": 600
-            },
-            "target": {
-              "cell": "85c6b4a9-3c15-4030-8000-99424ceaa35a",
-              "port": "f0e973b5-6830-4492-94a1-82f9d5f101da"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Delivery request",
               "description": "",
               "outOfScope": false,
@@ -563,7 +524,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "41af0e45-445e-44c1-88cc-d5eab4bb9d90"
+              ]
             },
             "labels": [
               "Delivery confirmation details"
@@ -578,6 +541,60 @@
               "port": "eeba3aff-897e-4b53-99e4-0f66f036fa0d"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Requested records",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "41af0e45-445e-44c1-88cc-d5eab4bb9d90"
+              ]
+            },
+            "labels": [
+              "Requested records"
+            ],
+            "id": "a3718d7c-f486-43e8-b4a7-6ef385ceb23c",
+            "source": {
+              "x": 1050,
+              "y": 450
+            },
+            "target": {
+              "cell": "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08",
+              "port": "be886685-f70f-440b-8793-22a26b469bd0"
+            },
+            "vertices": [
+              {
+                "x": 890,
+                "y": 450
+              }
+            ]
           },
           {
             "position": {
@@ -1113,11 +1130,11 @@
           {
             "position": {
               "x": 1030,
-              "y": 405.00000000000057
+              "y": 255.00000000000057
             },
             "size": {
-              "width": 310,
-              "height": 150
+              "width": 590,
+              "height": 300
             },
             "attrs": {
               "text": {
@@ -1980,6 +1997,174 @@
             "target": {
               "x": 860,
               "y": 610
+            },
+            "vertices": [
+              {
+                "x": 610,
+                "y": 440
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 30,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read requests / update household records / update delivery assignments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Read requests / update household records / update delivery assignments"
+            ],
+            "id": "3b5b6139-3b69-4104-940b-ef6d83769904",
+            "source": {
+              "x": 930,
+              "y": 600
+            },
+            "target": {
+              "x": 1050,
+              "y": 490
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 31,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "9bc560fb-3c26-4a80-97fa-502fba7e3a93",
+            "source": {
+              "x": 840,
+              "y": 620
+            },
+            "target": {
+              "cell": "7940a370-b732-4ace-8b48-f123e194e77b",
+              "port": "63ac6e38-a556-4636-af64-bf9a6c825781"
             }
           }
         ]
