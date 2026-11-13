@@ -64,13 +64,6 @@
                 "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
                 "edfdf35f-938b-4135-bb3a-fa293d5141eb"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1172,12 +1165,6 @@
               "x": 1030,
               "y": 220
             },
-            "vertices": [
-              {
-                "x": 800,
-                "y": 240
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -1222,7 +1209,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 800,
+                "y": 240
+              }
+            ]
           },
           {
             "position": {
@@ -2502,6 +2495,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 28,
             "ports": {
               "groups": {
                 "top": {
@@ -2585,7 +2579,6 @@
               ]
             },
             "id": "edfdf35f-938b-4135-bb3a-fa293d5141eb",
-            "zIndex": 28,
             "data": {
               "type": "tm.Store",
               "name": "Audit Store\n\nAccess & Action events",
@@ -2622,7 +2615,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Access & action events",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2638,7 +2631,7 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Access & action events"
             ],
             "id": "f343df58-4c1c-4b11-bcf3-c1d83571396a",
             "source": {
