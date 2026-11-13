@@ -574,52 +574,6 @@
             }
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "f6c0402e-2bb1-48db-a58a-73deab1abd0c",
-            "source": {
-              "x": 809,
-              "y": 892
-            },
-            "target": {
-              "x": 909,
-              "y": 992
-            }
-          },
-          {
             "position": {
               "x": 600,
               "y": 222
@@ -812,6 +766,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -908,8 +863,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 13
+            }
           },
           {
             "shape": "flow",
@@ -981,6 +935,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1064,7 +1019,6 @@
               ]
             },
             "id": "4b427bcc-1b03-4e48-9ce1-5fc1a597e71e",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "Cloud Object Storage",
@@ -1105,6 +1059,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1188,7 +1143,6 @@
               ]
             },
             "id": "af6150c6-9243-499d-ab8c-6d95835877d0",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "Shared vector index\n\n- Tenant identifier\n- Access labels",
@@ -1226,6 +1180,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1309,7 +1264,6 @@
               ]
             },
             "id": "3225946e-b151-4e43-9215-4f91b6d141b3",
-            "zIndex": 17,
             "data": {
               "type": "tm.Process",
               "name": "LLM Provider",
@@ -1346,6 +1300,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 18,
             "ports": {
               "groups": {
                 "top": {
@@ -1429,7 +1384,6 @@
               ]
             },
             "id": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
-            "zIndex": 18,
             "data": {
               "type": "tm.Process",
               "name": "Assistant backend",
@@ -1444,6 +1398,53 @@
               "privilegeLevel": "",
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 19,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "f6c0402e-2bb1-48db-a58a-73deab1abd0c",
+            "source": {
+              "x": 1050,
+              "y": 830
+            },
+            "target": {
+              "x": 1000,
+              "y": 930
+            },
+            "vertices": []
           }
         ]
       }
