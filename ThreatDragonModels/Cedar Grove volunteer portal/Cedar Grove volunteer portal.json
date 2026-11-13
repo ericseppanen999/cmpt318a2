@@ -44,10 +44,12 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
+                "768ee2d6-1383-42f1-8f5f-c92aea1ec25d",
                 "de080c2d-b544-45f5-9635-2ded91800330",
                 "fa621b44-81b6-4471-8b31-4b73dd091382",
                 "33755aa8-2de3-42e7-a9b6-a637a6c54f60",
-                "2f40a42f-3744-4bc9-9ee7-1bddcf81ab0d"
+                "2f40a42f-3744-4bc9-9ee7-1bddcf81ab0d",
+                "dacd7c9a-d54d-4caa-86b0-3316a2bc463c"
               ],
               "containedElements": [
                 "72f69cae-fbe6-440a-9e76-fe87ba311cfa",
@@ -486,41 +488,100 @@
             "target": {
               "x": 300,
               "y": 830
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff sign-in",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Staff sign-in"
+            ],
+            "id": "cdf3cb67-2dc0-4336-8c5b-30921cf1ff4f",
+            "source": {
+              "x": 320,
+              "y": 490
+            },
+            "target": {
+              "x": 830,
+              "y": 640
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Review requests,\nUpdate household records,\nAssign deliveries",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "41af0e45-445e-44c1-88cc-d5eab4bb9d90"
+              ]
+            },
+            "labels": [
+              "Review requests,\nUpdate household records,\nAssign deliveries"
+            ],
+            "id": "768ee2d6-1383-42f1-8f5f-c92aea1ec25d",
+            "source": {
+              "x": 920,
+              "y": 600
+            },
+            "target": {
+              "cell": "85c6b4a9-3c15-4030-8000-99424ceaa35a",
+              "port": "f0e973b5-6830-4492-94a1-82f9d5f101da"
             }
           },
           {
@@ -1726,56 +1787,6 @@
               "cell": "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08",
               "port": "55ffba05-0ba5-4b4a-9f8a-b9f8fac8dbc4"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "vertices": [
               {
                 "x": 460,
@@ -1875,6 +1886,60 @@
               "x": 190,
               "y": 780
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 28,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Coordinator sign-in\n(MFA)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "41af0e45-445e-44c1-88cc-d5eab4bb9d90"
+              ]
+            },
+            "labels": [
+              "Coordinator sign-in\n(MFA)"
+            ],
+            "id": "dacd7c9a-d54d-4caa-86b0-3316a2bc463c",
+            "source": {
+              "x": 310,
+              "y": 610
+            },
+            "target": {
+              "cell": "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08",
+              "port": "55ffba05-0ba5-4b4a-9f8a-b9f8fac8dbc4"
+            },
+            "vertices": [
+              {
+                "x": 590,
+                "y": 705
+              }
+            ]
           }
         ]
       }
