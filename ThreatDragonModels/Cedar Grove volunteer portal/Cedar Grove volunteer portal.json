@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 505,
-              "y": 330.00000000000136
+              "x": 525,
+              "y": 160.00000000000057
             },
             "size": {
               "width": 890,
-              "height": 530
+              "height": 680
             },
             "attrs": {
               "label": {
@@ -52,7 +52,6 @@
                 "dacd7c9a-d54d-4caa-86b0-3316a2bc463c"
               ],
               "containedElements": [
-                "72f69cae-fbe6-440a-9e76-fe87ba311cfa",
                 "85c6b4a9-3c15-4030-8000-99424ceaa35a",
                 "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08"
               ]
@@ -177,8 +176,8 @@
           },
           {
             "position": {
-              "x": 505,
-              "y": 380.00000000000057
+              "x": 490,
+              "y": 220.00000000000057
             },
             "size": {
               "width": 360,
@@ -294,109 +293,6 @@
               "privilegeLevel": "",
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Delivery confirmation details",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Delivery confirmation details"
-            ],
-            "id": "6a58f6a8-f428-448a-8134-cfeb091457a3",
-            "source": {
-              "x": 670,
-              "y": 380
-            },
-            "target": {
-              "cell": "480806f1-fa89-47a1-9726-7f12ed0e68a7",
-              "port": "eeba3aff-897e-4b53-99e4-0f66f036fa0d"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Delivery request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Delivery request"
-            ],
-            "id": "bbf87974-e6ee-4a52-b2e6-098b279ade7c",
-            "source": {
-              "x": 320,
-              "y": 310
-            },
-            "target": {
-              "x": 580,
-              "y": 460
-            },
-            "vertices": [
-              {
-                "x": 380,
-                "y": 360
-              },
-              {
-                "x": 530,
-                "y": 440
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -585,9 +481,108 @@
             }
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Delivery request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Delivery request"
+            ],
+            "id": "bbf87974-e6ee-4a52-b2e6-098b279ade7c",
+            "source": {
+              "x": 320,
+              "y": 310
+            },
+            "target": {
+              "x": 570,
+              "y": 320
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Delivery confirmation details",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Delivery confirmation details"
+            ],
+            "id": "6a58f6a8-f428-448a-8134-cfeb091457a3",
+            "source": {
+              "cell": "72f69cae-fbe6-440a-9e76-fe87ba311cfa",
+              "port": "a379485d-3074-4bb5-9bbe-08191c3214a8"
+            },
+            "target": {
+              "cell": "480806f1-fa89-47a1-9726-7f12ed0e68a7",
+              "port": "eeba3aff-897e-4b53-99e4-0f66f036fa0d"
+            },
+            "vertices": []
+          },
+          {
             "position": {
               "x": 505,
-              "y": 20
+              "y": -90
             },
             "size": {
               "width": 330,
@@ -1278,7 +1273,7 @@
             "id": "a8d27fa8-4800-4324-bb90-2713bca8aa35",
             "source": {
               "x": 770,
-              "y": 410
+              "y": 300
             },
             "target": {
               "x": 1030,
@@ -1940,6 +1935,52 @@
                 "y": 705
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 29,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Review requests / update household records / assign deliveries",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Review requests / update household records / assign deliveries"
+            ],
+            "id": "0639ceb0-4cf8-484a-aee3-50fb678727d3",
+            "source": {
+              "x": 320,
+              "y": 470
+            },
+            "target": {
+              "x": 860,
+              "y": 610
+            }
           }
         ]
       }
