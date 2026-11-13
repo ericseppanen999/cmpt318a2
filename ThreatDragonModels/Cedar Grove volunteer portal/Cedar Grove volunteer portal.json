@@ -48,7 +48,6 @@
                 "a3718d7c-f486-43e8-b4a7-6ef385ceb23c",
                 "de080c2d-b544-45f5-9635-2ded91800330",
                 "fa621b44-81b6-4471-8b31-4b73dd091382",
-                "33755aa8-2de3-42e7-a9b6-a637a6c54f60",
                 "2f40a42f-3744-4bc9-9ee7-1bddcf81ab0d",
                 "dacd7c9a-d54d-4caa-86b0-3316a2bc463c"
               ],
@@ -70,7 +69,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Client"
+                "text": "E1: Client"
               },
               "body": {
                 "stroke": "#333333",
@@ -166,7 +165,7 @@
             "id": "dcc1e6bb-0a57-48f7-ba7e-aedf55b75fc0",
             "data": {
               "type": "tm.Actor",
-              "name": "Client",
+              "name": "E1: Client",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -187,7 +186,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Delivery request web form"
+                "text": "P1: Delivery request web form"
               },
               "body": {
                 "stroke": "#333333",
@@ -283,7 +282,7 @@
             "id": "72f69cae-fbe6-440a-9e76-fe87ba311cfa",
             "data": {
               "type": "tm.Process",
-              "name": "Delivery request web form",
+              "name": "P1: Delivery request web form",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -600,7 +599,7 @@
             },
             "attrs": {
               "text": {
-                "text": "External delivery\nconfirmation service"
+                "text": "P3: External delivery\nconfirmation service"
               },
               "body": {
                 "stroke": "#333333",
@@ -696,7 +695,7 @@
             "id": "480806f1-fa89-47a1-9726-7f12ed0e68a7",
             "data": {
               "type": "tm.Process",
-              "name": "External delivery\nconfirmation service",
+              "name": "P3: External delivery\nconfirmation service",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -784,7 +783,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Staff"
+                "text": "E2: Staff"
               },
               "body": {
                 "stroke": "#333333",
@@ -880,7 +879,7 @@
             "id": "7940a370-b732-4ace-8b48-f123e194e77b",
             "data": {
               "type": "tm.Actor",
-              "name": "Staff",
+              "name": "E2: Staff",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -901,7 +900,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Coordinator"
+                "text": "E3: Coordinator"
               },
               "body": {
                 "stroke": "#333333",
@@ -997,7 +996,7 @@
             "id": "fdfba31d-5a72-4ea2-a4a5-1632d02cf15f",
             "data": {
               "type": "tm.Actor",
-              "name": "Coordinator",
+              "name": "E3: Coordinator",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1018,7 +1017,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Volunteers"
+                "text": "E4: Volunteers"
               },
               "body": {
                 "stroke": "#333333",
@@ -1114,7 +1113,7 @@
             "id": "e0edf123-5a8c-4343-8f35-a73daac2b965",
             "data": {
               "type": "tm.Actor",
-              "name": "Volunteers",
+              "name": "E4: Volunteers",
               "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -1135,7 +1134,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Client Information Database\n\nHousehold names, addresses, contact details,\n delivery requests, confidential intake notes"
+                "text": "S1: Client Information Database\n\nHousehold names, addresses, contact details,\n delivery requests, confidential intake notes"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1234,7 +1233,7 @@
             "id": "85c6b4a9-3c15-4030-8000-99424ceaa35a",
             "data": {
               "type": "tm.Store",
-              "name": "Client Information Database\n\nHousehold names, addresses, contact details,\n delivery requests, confidential intake notes",
+              "name": "S1: Client Information Database\n\nHousehold names, addresses, contact details,\n delivery requests, confidential intake notes",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1306,7 +1305,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Main volunteer portal"
+                "text": "P2: Main volunteer portal"
               },
               "body": {
                 "stroke": "#333333",
@@ -1402,7 +1401,7 @@
             "id": "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08",
             "data": {
               "type": "tm.Process",
-              "name": "Main volunteer portal",
+              "name": "P2: Main volunteer portal",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1463,6 +1462,10 @@
               "port": "55ffba05-0ba5-4b4a-9f8a-b9f8fac8dbc4"
             },
             "vertices": [
+              {
+                "x": 400,
+                "y": 860
+              },
               {
                 "x": 470,
                 "y": 840
@@ -1594,17 +1597,15 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "41af0e45-445e-44c1-88cc-d5eab4bb9d90"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Delivery list (CSV Export)"
             ],
             "id": "33755aa8-2de3-42e7-a9b6-a637a6c54f60",
             "source": {
-              "cell": "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08",
-              "port": "cb026ca7-510b-420b-86bd-2aa226738ec9"
+              "x": 830,
+              "y": 770
             },
             "target": {
               "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
@@ -1612,16 +1613,20 @@
             },
             "vertices": [
               {
-                "x": 760,
+                "x": 750,
+                "y": 860
+              },
+              {
+                "x": 680,
                 "y": 890
               },
               {
                 "x": 570,
-                "y": 940
+                "y": 920
               },
               {
-                "x": 440,
-                "y": 960
+                "x": 430,
+                "y": 940
               }
             ]
           },
@@ -1636,7 +1641,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Organizational shared folder\n(CSV Exports)"
+                "text": "S2: Organizational shared folder\n(CSV Exports)"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1735,7 +1740,7 @@
             "id": "a5e97049-3cd2-485f-8db6-b843c3740727",
             "data": {
               "type": "tm.Store",
-              "name": "Organizational shared folder\n(CSV Exports)",
+              "name": "S2: Organizational shared folder\n(CSV Exports)",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1747,6 +1752,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2046,81 +2058,6 @@
             "target": {
               "x": 1050,
               "y": 490
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           },
           {
