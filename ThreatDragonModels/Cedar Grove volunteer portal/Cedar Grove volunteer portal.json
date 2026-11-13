@@ -415,7 +415,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Download CSV",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -429,16 +429,16 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Download CSV"
             ],
             "id": "d003a28a-aef1-4886-83cb-47ecda4a4b39",
             "source": {
-              "x": 71,
-              "y": 750
+              "x": 820,
+              "y": 660
             },
             "target": {
-              "x": 171,
-              "y": 850
+              "cell": "fdfba31d-5a72-4ea2-a4a5-1632d02cf15f",
+              "port": "63ac6e38-a556-4636-af64-bf9a6c825781"
             }
           },
           {
