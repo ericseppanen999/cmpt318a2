@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "E1: Customer",
@@ -157,6 +157,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -240,7 +241,6 @@
               ]
             },
             "id": "91c38a1c-f98b-4eb6-aaa9-30c8678a907d",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "E2: Staff",
@@ -255,7 +255,7 @@
           },
           {
             "position": {
-              "x": 760,
+              "x": 880,
               "y": 180
             },
             "size": {
@@ -274,6 +274,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -357,7 +358,6 @@
               ]
             },
             "id": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Portal",
@@ -393,7 +393,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Submit tickets / PDF attachments",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -407,7 +407,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Submit tickets / PDF attachments"
             ],
             "id": "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
             "source": {
@@ -417,6 +417,274 @@
             "target": {
               "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
               "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
+            },
+            "vertices": [
+              {
+                "x": 660,
+                "y": 150
+              },
+              {
+                "x": 700,
+                "y": 150
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sign-in",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Sign-in"
+            ],
+            "id": "b111a6c8-8283-4b95-b564-28760a55403d",
+            "source": {
+              "x": 420,
+              "y": 230
+            },
+            "target": {
+              "cell": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
+              "port": "859a053e-e874-46cc-ad74-c4f6ba1d7608"
+            }
+          },
+          {
+            "position": {
+              "x": 600,
+              "y": 222
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Identity provider"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "859a053e-e874-46cc-ad74-c4f6ba1d7608"
+                },
+                {
+                  "group": "right",
+                  "id": "3deafc2e-2f28-4d0b-a56d-4641ed727730"
+                },
+                {
+                  "group": "bottom",
+                  "id": "75cdb9b6-6723-4279-9ba5-ad3705069695"
+                },
+                {
+                  "group": "left",
+                  "id": "3c423e84-a405-4bc9-a5bf-a2584cd656ee"
+                }
+              ]
+            },
+            "id": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Identity provider",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Signed identity tokens",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Signed identity tokens"
+            ],
+            "id": "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
+            "source": {
+              "x": 660,
+              "y": 220
+            },
+            "target": {
+              "x": 900,
+              "y": 230
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 13,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Validated identity tokens",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Validated identity tokens"
+            ],
+            "id": "c7cb4580-a00b-4341-bda6-fb13589449c3",
+            "source": {
+              "x": 890,
+              "y": 260
+            },
+            "target": {
+              "cell": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
+              "port": "3deafc2e-2f28-4d0b-a56d-4641ed727730"
             }
           }
         ]
