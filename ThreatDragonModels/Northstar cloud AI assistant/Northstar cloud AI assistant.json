@@ -496,6 +496,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -579,7 +580,6 @@
               ]
             },
             "id": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Identity provider",
@@ -637,8 +637,8 @@
               "y": 220
             },
             "target": {
-              "x": 900,
-              "y": 230
+              "x": 1030,
+              "y": 220
             }
           },
           {
@@ -679,7 +679,7 @@
             ],
             "id": "c7cb4580-a00b-4341-bda6-fb13589449c3",
             "source": {
-              "x": 890,
+              "x": 1010,
               "y": 260
             },
             "target": {
