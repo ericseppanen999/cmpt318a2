@@ -593,7 +593,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Indexed documents",
+              "name": "Data Flow",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -607,23 +607,17 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Indexed documents"
+              "Data Flow"
             ],
-            "id": "17d96bf5-8b39-4762-addc-8290a12b5f42",
+            "id": "f6c0402e-2bb1-48db-a58a-73deab1abd0c",
             "source": {
-              "x": 1220,
-              "y": 810
+              "x": 809,
+              "y": 892
             },
             "target": {
-              "cell": "af6150c6-9243-499d-ab8c-6d95835877d0",
-              "port": "1a37c162-708d-423c-bbf8-7354a3509406"
-            },
-            "vertices": [
-              {
-                "x": 1400,
-                "y": 920
-              }
-            ]
+              "x": 909,
+              "y": 992
+            }
           },
           {
             "position": {
@@ -965,7 +959,7 @@
           },
           {
             "position": {
-              "x": 1000,
+              "x": 1260,
               "y": 940
             },
             "size": {
@@ -1089,7 +1083,7 @@
           },
           {
             "position": {
-              "x": 1350,
+              "x": 960,
               "y": 940
             },
             "size": {
