@@ -21,7 +21,7 @@
         "cells": [
           {
             "position": {
-              "x": 560,
+              "x": 570,
               "y": 90
             },
             "size": {
@@ -46,8 +46,8 @@
               "crossingFlows": [
                 "122a59de-e5ff-488e-bbb2-e9c9f06e02d7",
                 "fde2053c-3251-4d21-8277-8d9683c6f94f",
-                "a89a782e-7568-4534-b71b-51b65e8996b2",
                 "34d56af0-15e0-48d0-af56-4c68ab120f45",
+                "a89a782e-7568-4534-b71b-51b65e8996b2",
                 "618b1bdd-a272-4623-aa15-544b2fb7da24",
                 "3d4b9f5e-c078-4f8f-8a5b-8805701350df",
                 "e7be38ab-1be6-4f91-9d1b-86950cc8705e",
@@ -55,7 +55,8 @@
                 "3f091239-27e0-4dad-a19e-f84583278596",
                 "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
                 "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
-                "5056fa96-c176-4116-950f-b2d0ab323454"
+                "5056fa96-c176-4116-950f-b2d0ab323454",
+                "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4"
               ],
               "containedElements": [
                 "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -188,7 +189,7 @@
           {
             "position": {
               "x": 30,
-              "y": 212
+              "y": 215
             },
             "size": {
               "width": 112.5,
@@ -636,60 +637,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Send email",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
-            },
-            "labels": [
-              "Send email"
-            ],
-            "id": "a89a782e-7568-4534-b71b-51b65e8996b2",
-            "source": {
-              "cell": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
-              "port": "77340112-1910-4ae4-9090-430477c45cf7"
-            },
-            "target": {
-              "cell": "c4653ad7-2ab3-4116-a401-a3f5ca3711dd",
-              "port": "460f88b5-d651-428b-86fa-b5ce4c408ecf"
-            },
-            "vertices": [
-              {
-                "x": 390,
-                "y": 490
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Email",
               "description": "",
               "outOfScope": false,
@@ -723,58 +670,6 @@
               {
                 "x": -50,
                 "y": 220
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Staff (Y/N)",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Staff (Y/N)"
-            ],
-            "id": "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
-            "source": {
-              "x": 30,
-              "y": 250
-            },
-            "target": {
-              "x": 630,
-              "y": 470
-            },
-            "vertices": [
-              {
-                "x": 150,
-                "y": 420
               }
             ]
           },
@@ -937,6 +832,60 @@
               "x": 1390,
               "y": 520
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Send email",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
+            },
+            "labels": [
+              "Send email"
+            ],
+            "id": "a89a782e-7568-4534-b71b-51b65e8996b2",
+            "source": {
+              "cell": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
+              "port": "77340112-1910-4ae4-9090-430477c45cf7"
+            },
+            "target": {
+              "cell": "c4653ad7-2ab3-4116-a401-a3f5ca3711dd",
+              "port": "460f88b5-d651-428b-86fa-b5ce4c408ecf"
+            },
+            "vertices": [
+              {
+                "x": 370,
+                "y": 490
+              }
+            ]
           },
           {
             "position": {
@@ -1864,11 +1813,11 @@
           },
           {
             "position": {
-              "x": 595,
+              "x": 600,
               "y": 450.0000000000001
             },
             "size": {
-              "width": 180,
+              "width": 150,
               "height": 140
             },
             "attrs": {
@@ -2068,7 +2017,7 @@
             ],
             "id": "e7be38ab-1be6-4f91-9d1b-86950cc8705e",
             "source": {
-              "x": 810,
+              "x": 790,
               "y": 730
             },
             "target": {
@@ -2725,6 +2674,66 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -2901,6 +2910,155 @@
               {
                 "x": 770,
                 "y": 360
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 35,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Staff (Y/N)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
+            },
+            "labels": [
+              "Staff (Y/N)"
+            ],
+            "id": "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
+            "source": {
+              "x": 10,
+              "y": 250
+            },
+            "target": {
+              "cell": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
+              "port": "77340112-1910-4ae4-9090-430477c45cf7"
+            },
+            "vertices": [
+              {
+                "x": 130,
+                "y": 420
               }
             ]
           }
