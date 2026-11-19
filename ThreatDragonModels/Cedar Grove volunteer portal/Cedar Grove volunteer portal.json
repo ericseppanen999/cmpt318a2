@@ -2486,7 +2486,8 @@
               "port": "b92802ed-e7d9-40f1-8a33-e0d18f0cf3c1"
             }
           }
-        ]
+        ],
+        "description": "Assumptions: The shared folder is on some third-party cloud service. Also, volunteers can see any file in it (there are no special permissions) but only the coordinator manages sharing and upload. Some hosting provider runs the servers and database for Cedar Grove. CSVs stay indefinitely in the shared folder and on phones. There's no retention/deletion policy."
       }
     ],
     "diagramTop": 1,
