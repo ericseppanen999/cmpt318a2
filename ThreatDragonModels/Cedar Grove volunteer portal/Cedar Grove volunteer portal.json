@@ -449,7 +449,7 @@
             "vertices": [
               {
                 "x": 360,
-                "y": 840
+                "y": 830
               }
             ]
           },
@@ -2445,7 +2445,7 @@
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "A lost/stolen/compromised phone exposes the full delivery record CSV whether that be through malware or simply a weak/lack of password. The weekly delivery list is downloaded through the portal or through the shared folder, and then stays on the personal phone indefinitely, which Cedar Grove doesn't manage. These files contain important information about clients, and therefore exposes vulnerable people.",
-                  "mitigation": "Potential mitigations:\n- Require biometric access on personal devices that download CSVs\n- Limit the data exposed in the export to just delivery information",
+                  "mitigation": "Potential mitigations:\n- Make a volunteer policy that suggests biometric access on personal devices which download CSVs. This stops a lost phone from being opened. \n- Limit the data exposed in the export to just delivery information. This way, if a file is compromised, there is less sensitive information exposed.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
@@ -2455,9 +2455,16 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
