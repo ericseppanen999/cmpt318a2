@@ -445,7 +445,13 @@
             "target": {
               "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
               "port": "63ac6e38-a556-4636-af64-bf9a6c825781"
-            }
+            },
+            "vertices": [
+              {
+                "x": 360,
+                "y": 840
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1084,13 +1090,6 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2162,7 +2161,13 @@
             "target": {
               "cell": "a5e97049-3cd2-485f-8db6-b843c3740727",
               "port": "592698fc-bfe5-403f-842c-0e58875b9e9b"
-            }
+            },
+            "vertices": [
+              {
+                "x": 140,
+                "y": 820
+              }
+            ]
           },
           {
             "shape": "flow",
