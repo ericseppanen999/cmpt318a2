@@ -66,13 +66,6 @@
                 "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
                 "edfdf35f-938b-4135-bb3a-fa293d5141eb"
               ]
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -194,8 +187,8 @@
           },
           {
             "position": {
-              "x": 30,
-              "y": 215
+              "x": 10,
+              "y": 265
             },
             "size": {
               "width": 112.5,
@@ -478,68 +471,8 @@
             },
             "vertices": [
               {
-                "x": 370,
-                "y": 490
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Email",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Email"
-            ],
-            "id": "9df180d8-3d88-4b01-bcdd-aa6f6dc81e6e",
-            "source": {
-              "cell": "c4653ad7-2ab3-4116-a401-a3f5ca3711dd",
-              "port": "77340112-1910-4ae4-9090-430477c45cf7"
-            },
-            "target": {
-              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
-              "port": "998351c3-43fa-4065-92cf-565c43327770"
-            },
-            "vertices": [
-              {
-                "x": -70,
-                "y": 430
-              },
-              {
-                "x": -100,
-                "y": 340
-              },
-              {
-                "x": -50,
-                "y": 220
+                "x": 360,
+                "y": 570
               }
             ]
           },
@@ -596,12 +529,12 @@
                 "y": 460
               },
               {
-                "x": 220,
-                "y": 370
+                "x": 270,
+                "y": 420
               },
               {
-                "x": 120,
-                "y": 300
+                "x": 100,
+                "y": 370
               }
             ]
           },
@@ -816,9 +749,69 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Email"
+            ],
+            "id": "9df180d8-3d88-4b01-bcdd-aa6f6dc81e6e",
+            "source": {
+              "cell": "c4653ad7-2ab3-4116-a401-a3f5ca3711dd",
+              "port": "77340112-1910-4ae4-9090-430477c45cf7"
+            },
+            "target": {
+              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
+              "port": "998351c3-43fa-4065-92cf-565c43327770"
+            },
+            "vertices": [
+              {
+                "x": -80,
+                "y": 440
+              },
+              {
+                "x": -80,
+                "y": 340
+              },
+              {
+                "x": -30,
+                "y": 220
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 369.99999999999136,
-              "y": 170
+              "x": 320,
+              "y": 160
             },
             "size": {
               "width": 170,
@@ -1361,8 +1354,8 @@
           },
           {
             "position": {
-              "x": 10,
-              "y": 540
+              "x": -47.5,
+              "y": 580
             },
             "size": {
               "width": 110,
@@ -1966,6 +1959,11 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -2025,11 +2023,11 @@
           },
           {
             "position": {
-              "x": 2.5,
-              "y": 412
+              "x": -47.5,
+              "y": 450.0000000000001
             },
             "size": {
-              "width": 140,
+              "width": 110,
               "height": 110
             },
             "attrs": {
@@ -2200,11 +2198,11 @@
                 "y": 420
               },
               {
-                "x": 500,
+                "x": 540,
                 "y": 420
               },
               {
-                "x": 390,
+                "x": 400,
                 "y": 400
               }
             ]
@@ -2529,8 +2527,8 @@
             ],
             "id": "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
             "source": {
-              "x": 540,
-              "y": 240
+              "cell": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
+              "port": "3deafc2e-2f28-4d0b-a56d-4641ed727730"
             },
             "target": {
               "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -2541,7 +2539,37 @@
                 "x": 800,
                 "y": 240
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2590,8 +2618,8 @@
             },
             "vertices": [
               {
-                "x": 270,
-                "y": 242
+                "x": 200,
+                "y": 235
               }
             ]
           },
@@ -2702,7 +2730,7 @@
             },
             "vertices": [
               {
-                "x": 130,
+                "x": 40,
                 "y": 420
               }
             ]
@@ -2799,66 +2827,6 @@
             "target": {
               "cell": "3225946e-b151-4e43-9215-4f91b6d141b3",
               "port": "75162ad6-8ace-48cb-955d-804b701aab98"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           }
         ]
