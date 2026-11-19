@@ -78,8 +78,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "248529f1-6d03-4856-b130-b8368353b894",
             "zIndex": -1,
+            "id": "248529f1-6d03-4856-b130-b8368353b894",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "External email service",
@@ -111,8 +111,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "c5dda5c5-6617-40be-a40b-b5a47fc6f226",
             "zIndex": -1,
+            "id": "c5dda5c5-6617-40be-a40b-b5a47fc6f226",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Personal devices",
@@ -144,8 +144,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5f84aa18-a365-4dad-bf45-5ebcc9267a95",
             "zIndex": -1,
+            "id": "5f84aa18-a365-4dad-bf45-5ebcc9267a95",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Shared folder service (third-party)",
@@ -2328,16 +2328,19 @@
                 "text": "S3: Volunteer phones"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 39,
             "ports": {
               "groups": {
                 "top": {
@@ -2421,7 +2424,6 @@
               ]
             },
             "id": "3d00266f-139d-407d-bb47-824743027f2e",
-            "zIndex": 39,
             "data": {
               "type": "tm.Store",
               "name": "S3: Volunteer phones",
@@ -2429,13 +2431,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "5a43e66c-d0f3-4ba4-9839-cceafaa7db0e",
+                  "title": "A01: Exported CSV on compromised personal devices",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "A lost/stolen/compromised phone exposes the full delivery record CSV whether that be through malware or simply a weak/lack of password. The weekly delivery list is downloaded through the portal or through the shared folder, and then stays on the personal phone indefinitely, which Cedar Grove doesn't manage. These files contain important information about clients, and therefore exposes vulnerable people.",
+                  "mitigation": "Potential mitigations:\n- Require biometric access on personal devices that download CSVs\n- Limit the data exposed in the export to just delivery information",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2492,6 +2514,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
