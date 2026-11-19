@@ -22,7 +22,7 @@
           {
             "position": {
               "x": 540,
-              "y": 80
+              "y": 50
             },
             "size": {
               "width": 1180,
@@ -44,13 +44,15 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "fde2053c-3251-4d21-8277-8d9683c6f94f",
                 "a89a782e-7568-4534-b71b-51b65e8996b2",
                 "912157f9-75e0-4548-ad36-0884b99fb910",
+                "122a59de-e5ff-488e-bbb2-e9c9f06e02d7",
+                "7d126e34-9c30-4f37-b1a8-f26905b7a3e8",
+                "fde2053c-3251-4d21-8277-8d9683c6f94f",
+                "f6c0402e-2bb1-48db-a58a-73deab1abd0c",
+                "618b1bdd-a272-4623-aa15-544b2fb7da24",
                 "3d4b9f5e-c078-4f8f-8a5b-8805701350df",
-                "923dd7f0-0c40-40ae-b733-8f791ea3ef62",
                 "2089126d-7bb7-4a61-9724-54d337898199",
-                "3f091239-27e0-4dad-a19e-f84583278596",
                 "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
                 "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
                 "5056fa96-c176-4116-950f-b2d0ab323454",
@@ -60,12 +62,17 @@
               "containedElements": [
                 "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
                 "2330a553-d3c0-4d33-9677-af50e4158b08",
-                "4b427bcc-1b03-4e48-9ce1-5fc1a597e71e",
-                "af6150c6-9243-499d-ab8c-6d95835877d0",
                 "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
                 "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
                 "edfdf35f-938b-4135-bb3a-fa293d5141eb"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -442,60 +449,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Question and ticket context",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
-            },
-            "labels": [
-              "Question and ticket context"
-            ],
-            "id": "fde2053c-3251-4d21-8277-8d9683c6f94f",
-            "source": {
-              "x": 1120,
-              "y": 410
-            },
-            "target": {
-              "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
-              "port": "e4daafb7-943f-478d-97b4-93914c7b9b4c"
-            },
-            "vertices": [
-              {
-                "x": 880,
-                "y": 550
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Send email",
               "description": "",
               "outOfScope": false,
@@ -683,7 +636,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Uploaded documents"
@@ -729,7 +684,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Reads passages"
@@ -783,7 +740,7 @@
             "id": "34d56af0-15e0-48d0-af56-4c68ab120f45",
             "source": {
               "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
-              "port": "e4daafb7-943f-478d-97b4-93914c7b9b4c"
+              "port": "75162ad6-8ace-48cb-955d-804b701aab98"
             },
             "target": {
               "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -791,8 +748,70 @@
             },
             "vertices": [
               {
-                "x": 910,
-                "y": 640
+                "x": 1240,
+                "y": 790
+              },
+              {
+                "x": 1350,
+                "y": 550
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Question and ticket context",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
+            },
+            "labels": [
+              "Question and ticket context"
+            ],
+            "id": "fde2053c-3251-4d21-8277-8d9683c6f94f",
+            "source": {
+              "x": 1120,
+              "y": 410
+            },
+            "target": {
+              "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
+              "port": "75162ad6-8ace-48cb-955d-804b701aab98"
+            },
+            "vertices": [
+              {
+                "x": 1300,
+                "y": 560
+              },
+              {
+                "x": 1170,
+                "y": 730
               }
             ]
           },
@@ -918,8 +937,8 @@
           },
           {
             "position": {
-              "x": 1030,
-              "y": 612
+              "x": 1400,
+              "y": 580
             },
             "size": {
               "width": 230,
@@ -1075,7 +1094,7 @@
             "id": "f934c655-08d6-40f9-b31d-a0eec7f0087d",
             "source": {
               "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "1be3bbea-173b-4efc-ab5f-f21ff6f7b8e2"
+              "port": "3ab1b74f-bdfc-495d-a1a6-25ffd2bbb359"
             },
             "target": {
               "cell": "2330a553-d3c0-4d33-9677-af50e4158b08",
@@ -1083,14 +1102,18 @@
             },
             "vertices": [
               {
-                "x": 1230,
-                "y": 490
+                "x": 1490,
+                "y": 350
+              },
+              {
+                "x": 1535,
+                "y": 420
               }
             ]
           },
           {
             "position": {
-              "x": 1260,
+              "x": 1360,
               "y": 940
             },
             "size": {
@@ -1607,7 +1630,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Indexed documents"
@@ -1654,7 +1679,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Retrieved relevant passeges"
@@ -1667,6 +1694,26 @@
             "target": {
               "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
               "port": "5e4a2c5d-1eb4-4369-838f-f211b0b71ebc"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -1869,17 +1916,15 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Create ticket"
             ],
             "id": "923dd7f0-0c40-40ae-b733-8f791ea3ef62",
             "source": {
-              "x": 680,
-              "y": 450
+              "cell": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
+              "port": "1e4790bb-7346-4edd-97f7-f269161e95a2"
             },
             "target": {
               "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -1887,6 +1932,21 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -2151,8 +2211,8 @@
           },
           {
             "position": {
-              "x": 1385,
-              "y": 522
+              "x": 970,
+              "y": 545
             },
             "size": {
               "width": 190,
@@ -2312,7 +2372,7 @@
             "id": "f343df58-4c1c-4b11-bcf3-c1d83571396a",
             "source": {
               "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "3ab1b74f-bdfc-495d-a1a6-25ffd2bbb359"
+              "port": "1be3bbea-173b-4efc-ab5f-f21ff6f7b8e2"
             },
             "target": {
               "cell": "edfdf35f-938b-4135-bb3a-fa293d5141eb",
@@ -2350,26 +2410,24 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Access & action events"
             ],
             "id": "3f091239-27e0-4dad-a19e-f84583278596",
             "source": {
-              "x": 870,
-              "y": 790
+              "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
+              "port": "e4daafb7-943f-478d-97b4-93914c7b9b4c"
             },
             "target": {
               "cell": "edfdf35f-938b-4135-bb3a-fa293d5141eb",
-              "port": "680a3d70-d9e0-4ec9-9440-b3c7087d84ad"
+              "port": "58cea980-2172-40d5-b6dc-abc96f426ac8"
             },
             "vertices": [
               {
-                "x": 1030,
-                "y": 610
+                "x": 970,
+                "y": 710
               }
             ]
           },
@@ -2744,6 +2802,11 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
