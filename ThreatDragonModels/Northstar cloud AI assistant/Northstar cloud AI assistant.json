@@ -1652,7 +1652,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Retrieved relevant passeges",
+              "name": "Retrieved relevant passages",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1666,7 +1666,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Retrieved relevant passeges"
+              "Retrieved relevant passages"
             ],
             "id": "618b1bdd-a272-4623-aa15-544b2fb7da24",
             "source": {
@@ -1676,7 +1676,13 @@
             "target": {
               "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
               "port": "5e4a2c5d-1eb4-4369-838f-f211b0b71ebc"
-            }
+            },
+            "vertices": [
+              {
+                "x": 860,
+                "y": 920
+              }
+            ]
           },
           {
             "shape": "flow",
