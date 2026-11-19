@@ -21,16 +21,16 @@
         "cells": [
           {
             "position": {
-              "x": 425,
+              "x": 405,
               "y": 210
             },
             "size": {
-              "width": 980,
+              "width": 1140,
               "height": 680
             },
             "attrs": {
               "label": {
-                "text": "Cedar Grove trust boundary"
+                "text": "Cedar Grove hosted service"
               }
             },
             "visible": true,
@@ -39,7 +39,7 @@
             "id": "41af0e45-445e-44c1-88cc-d5eab4bb9d90",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Cedar Grove trust boundary",
+              "name": "Cedar Grove hosted service",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -64,8 +64,108 @@
           },
           {
             "position": {
+              "x": 470,
+              "y": -129.99999999999957
+            },
+            "size": {
+              "width": 310,
+              "height": 260
+            },
+            "attrs": {
+              "label": {
+                "text": "External email service"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "248529f1-6d03-4856-b130-b8368353b894",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "External email service",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "4d44b39a-c855-4adc-9f91-dd2124c0bb7b",
+                "6a58f6a8-f428-448a-8134-cfeb091457a3"
+              ],
+              "containedElements": [
+                "480806f1-fa89-47a1-9726-7f12ed0e68a7"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 425,
+              "y": 970
+            },
+            "size": {
+              "width": 240,
+              "height": 180
+            },
+            "attrs": {
+              "label": {
+                "text": "Personal devices"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "c5dda5c5-6617-40be-a40b-b5a47fc6f226",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Personal devices",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "cf8ab059-97c2-4717-850a-ea837870a93e",
+                "1459db26-2a0b-4121-86c7-202f386206d7"
+              ],
+              "containedElements": [
+                "3d00266f-139d-407d-bb47-824743027f2e"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 109.99999999999977,
+              "y": 660
+            },
+            "size": {
+              "width": 280,
+              "height": 160
+            },
+            "attrs": {
+              "label": {
+                "text": "Shared folder service (third-party)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "5f84aa18-a365-4dad-bf45-5ebcc9267a95",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Shared folder service (third-party)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "be3b33c3-3509-4df8-8d55-2ad4173cfbd7",
+                "bdf72f3b-d357-4f85-bc64-0ad74c887b6a",
+                "94c19058-7c39-4c83-850f-4e28c05d5344"
+              ],
+              "containedElements": [
+                "a5e97049-3cd2-485f-8db6-b843c3740727"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 180,
-              "y": 270
+              "y": 260
             },
             "size": {
               "width": 140,
@@ -330,7 +430,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
+              ]
             },
             "labels": [
               "Download CSV"
@@ -394,6 +496,60 @@
               {
                 "x": 880,
                 "y": 460
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Save delivery list (CSV)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "c5dda5c5-6617-40be-a40b-b5a47fc6f226"
+              ]
+            },
+            "labels": [
+              "Save delivery list (CSV)"
+            ],
+            "id": "cf8ab059-97c2-4717-850a-ea837870a93e",
+            "source": {
+              "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
+              "port": "b92802ed-e7d9-40f1-8a33-e0d18f0cf3c1"
+            },
+            "target": {
+              "cell": "3d00266f-139d-407d-bb47-824743027f2e",
+              "port": "60a76636-79a3-4eba-a045-27bfaa7c5565"
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 1090
               }
             ]
           },
@@ -548,7 +704,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "248529f1-6d03-4856-b130-b8368353b894"
+              ]
             },
             "labels": [
               "Email notification"
@@ -565,22 +723,22 @@
             "vertices": [
               {
                 "x": 430,
-                "y": 110
+                "y": 100
               },
               {
                 "x": 360,
-                "y": 140
+                "y": 130
               },
               {
                 "x": 270,
-                "y": 200
+                "y": 190
               }
             ]
           },
           {
             "position": {
               "x": 180,
-              "y": 430.00000000000057
+              "y": 420.00000000000057
             },
             "size": {
               "width": 140,
@@ -697,7 +855,7 @@
           {
             "position": {
               "x": 180,
-              "y": 532.0000000000006
+              "y": 522.0000000000006
             },
             "size": {
               "width": 140,
@@ -814,7 +972,7 @@
           {
             "position": {
               "x": 180,
-              "y": 840.0000000000006
+              "y": 860
             },
             "size": {
               "width": 140,
@@ -926,12 +1084,19 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
             "position": {
-              "x": 1030,
-              "y": 270
+              "x": 1140,
+              "y": 260
             },
             "size": {
               "width": 360,
@@ -1054,8 +1219,8 @@
           },
           {
             "position": {
-              "x": 800,
-              "y": 600.0000000000006
+              "x": 910,
+              "y": 650
             },
             "size": {
               "width": 230,
@@ -1221,12 +1386,12 @@
             },
             "vertices": [
               {
-                "x": 400,
-                "y": 860
+                "x": 410,
+                "y": 880
               },
               {
-                "x": 470,
-                "y": 840
+                "x": 670,
+                "y": 820
               }
             ]
           },
@@ -1323,15 +1488,15 @@
             },
             "vertices": [
               {
-                "x": 1210,
-                "y": 680
+                "x": 1320,
+                "y": 755
               }
             ]
           },
           {
             "position": {
               "x": 140,
-              "y": 670
+              "y": 690
             },
             "size": {
               "width": 220,
@@ -1502,11 +1667,11 @@
             "vertices": [
               {
                 "x": 490,
-                "y": 572
+                "y": 562
               },
               {
                 "x": 670,
-                "y": 630
+                "y": 620
               }
             ]
           },
@@ -1541,7 +1706,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
+              ]
             },
             "labels": [
               "Upload CSV"
@@ -1607,7 +1774,7 @@
             "vertices": [
               {
                 "x": 590,
-                "y": 705
+                "y": 695
               }
             ]
           },
@@ -1661,7 +1828,7 @@
             "vertices": [
               {
                 "x": 610,
-                "y": 440
+                "y": 430
               }
             ]
           },
@@ -1767,15 +1934,15 @@
             "vertices": [
               {
                 "x": 650,
-                "y": 490
+                "y": 480
               },
               {
                 "x": 610,
-                "y": 490
+                "y": 480
               },
               {
                 "x": 530,
-                "y": 470
+                "y": 460
               }
             ]
           },
@@ -1811,7 +1978,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "41af0e45-445e-44c1-88cc-d5eab4bb9d90"
+                "41af0e45-445e-44c1-88cc-d5eab4bb9d90",
+                "248529f1-6d03-4856-b130-b8368353b894"
               ]
             },
             "labels": [
@@ -1878,7 +2046,7 @@
             "vertices": [
               {
                 "x": 390,
-                "y": 330
+                "y": 320
               }
             ]
           },
@@ -1979,7 +2147,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
+              ]
             },
             "labels": [
               "Request CSV"
@@ -2135,6 +2305,178 @@
             "target": {
               "cell": "e5707f95-3c12-4a9d-9bfd-53fa7d0efb08",
               "port": "be886685-f70f-440b-8793-22a26b469bd0"
+            }
+          },
+          {
+            "position": {
+              "x": 475,
+              "y": 1030
+            },
+            "size": {
+              "width": 140,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "S3: Volunteer phones"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "f64b5f82-fea9-4e16-8b23-93ed0f9346f7"
+                },
+                {
+                  "group": "right",
+                  "id": "bdbad828-7c4a-47a9-aa0a-903bca758324"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4c45361a-f25c-416a-85cf-3ceeab0071f1"
+                },
+                {
+                  "group": "left",
+                  "id": "60a76636-79a3-4eba-a045-27bfaa7c5565"
+                }
+              ]
+            },
+            "id": "3d00266f-139d-407d-bb47-824743027f2e",
+            "zIndex": 39,
+            "data": {
+              "type": "tm.Store",
+              "name": "S3: Volunteer phones",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 40,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "View CSV",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "c5dda5c5-6617-40be-a40b-b5a47fc6f226"
+              ]
+            },
+            "labels": [
+              "View CSV"
+            ],
+            "id": "1459db26-2a0b-4121-86c7-202f386206d7",
+            "source": {
+              "cell": "3d00266f-139d-407d-bb47-824743027f2e",
+              "port": "60a76636-79a3-4eba-a045-27bfaa7c5565"
+            },
+            "target": {
+              "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
+              "port": "b92802ed-e7d9-40f1-8a33-e0d18f0cf3c1"
             }
           }
         ]
