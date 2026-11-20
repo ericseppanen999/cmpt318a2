@@ -128,12 +128,12 @@
           },
           {
             "position": {
-              "x": 1710,
-              "y": 520
+              "x": 429.9999999999998,
+              "y": 992
             },
             "size": {
-              "width": 128,
-              "height": 60
+              "width": 240,
+              "height": 310
             },
             "attrs": {
               "label": {
@@ -142,8 +142,7 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "762210dc-4f09-49a6-93e6-2689d2a71ae8",
-            "zIndex": -1,
+            "id": "addbfac3-3182-4bbc-a1bb-7f18c95f8e6d",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -151,15 +150,105 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
-              "containedElements": []
+              "containedElements": [
+                "5fe4a922-b3df-4fbb-819b-111b537784b8",
+                "b363aba7-a925-4f37-a428-77525d5c8699"
+              ]
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": -1
+          },
+          {
+            "position": {
+              "x": 729.9999999999998,
+              "y": 992
+            },
+            "size": {
+              "width": 240,
+              "height": 310
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "a273ab91-44e3-47a6-843b-9bacc7f691a4",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "3961f658-8170-4bc2-91a9-c25e7f6bc9f6",
+                "ccdab7e2-7416-4652-be51-ea4ceaef127b"
+              ]
+            },
+            "zIndex": -1
+          },
+          {
+            "position": {
+              "x": 1030,
+              "y": 992
+            },
+            "size": {
+              "width": 240,
+              "height": 310
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "60832c98-c516-43b0-adf8-39928855caf5",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "1121b42e-82eb-43a7-bb28-eadd059c81de",
+                "0cfd28c8-cb97-4175-a8af-609e8aee4eab"
+              ]
+            },
+            "zIndex": -1
+          },
+          {
+            "position": {
+              "x": 1340,
+              "y": 992
+            },
+            "size": {
+              "width": 240,
+              "height": 310
+            },
+            "attrs": {
+              "label": {
+                "text": "Trust Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "0cde0913-5f28-4289-af94-1ebe530bcfb8",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "4fb1dde4-f9a3-4520-9936-872e0eff1a72",
+                "aa79272f-d213-4d53-87e9-0f06a265cad2"
+              ]
+            },
+            "zIndex": -1
           },
           {
             "position": {
@@ -685,8 +774,8 @@
             },
             "vertices": [
               {
-                "x": 590,
-                "y": 660
+                "x": 740,
+                "y": 390
               }
             ]
           },
@@ -1104,6 +1193,54 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ed5165a0-4e33-4a90-88e7-a29490dcac13",
+            "source": {
+              "cell": "b93656da-f023-4eda-9a85-dc4e2576cf1a",
+              "port": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+            },
+            "target": {
+              "cell": "b93656da-f023-4eda-9a85-dc4e2576cf1a",
+              "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+            },
+            "vertices": [],
+            "parent": "b93656da-f023-4eda-9a85-dc4e2576cf1a"
+          },
+          {
             "position": {
               "x": 560,
               "y": 410
@@ -1221,7 +1358,10 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            }
+            },
+            "children": [
+              "ed5165a0-4e33-4a90-88e7-a29490dcac13"
+            ]
           },
           {
             "position": {
@@ -1833,8 +1973,8 @@
           },
           {
             "position": {
-              "x": 565,
-              "y": 790.0000000000053
+              "x": 845,
+              "y": 445
             },
             "size": {
               "width": 160,
@@ -2530,6 +2670,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 27,
             "ports": {
               "groups": {
                 "top": {
@@ -2626,8 +2767,971 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 485,
+              "y": 1037
             },
-            "zIndex": 27
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "P3\nNucleus"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+                },
+                {
+                  "group": "right",
+                  "id": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+                },
+                {
+                  "group": "left",
+                  "id": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+                }
+              ]
+            },
+            "id": "5fe4a922-b3df-4fbb-819b-111b537784b8",
+            "data": {
+              "type": "tm.Process",
+              "name": "P3\nNucleus",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 28
+          },
+          {
+            "position": {
+              "x": 787,
+              "y": 1039
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "P3\nDonorPerfect"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+                },
+                {
+                  "group": "right",
+                  "id": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+                },
+                {
+                  "group": "left",
+                  "id": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+                }
+              ]
+            },
+            "id": "3961f658-8170-4bc2-91a9-c25e7f6bc9f6",
+            "data": {
+              "type": "tm.Process",
+              "name": "P3\nDonorPerfect",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 29
+          },
+          {
+            "position": {
+              "x": 1089,
+              "y": 1041
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "P3\nHi Rasmus"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+                },
+                {
+                  "group": "right",
+                  "id": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+                },
+                {
+                  "group": "left",
+                  "id": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+                }
+              ]
+            },
+            "id": "1121b42e-82eb-43a7-bb28-eadd059c81de",
+            "data": {
+              "type": "tm.Process",
+              "name": "P3\nHi Rasmus",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 30
+          },
+          {
+            "position": {
+              "x": 1400,
+              "y": 1037
+            },
+            "size": {
+              "width": 130,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "P3\nCollage"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+                },
+                {
+                  "group": "right",
+                  "id": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+                },
+                {
+                  "group": "left",
+                  "id": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+                }
+              ]
+            },
+            "id": "4fb1dde4-f9a3-4520-9936-872e0eff1a72",
+            "data": {
+              "type": "tm.Process",
+              "name": "P3\nCollage",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            },
+            "zIndex": 31
+          },
+          {
+            "position": {
+              "x": 490,
+              "y": 1205
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
+                },
+                {
+                  "group": "right",
+                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
+                },
+                {
+                  "group": "left",
+                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
+                }
+              ]
+            },
+            "id": "b363aba7-a925-4f37-a428-77525d5c8699",
+            "zIndex": 32,
+            "data": {
+              "type": "tm.Store",
+              "name": "Store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 789.9999999999998,
+              "y": 1205
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
+                },
+                {
+                  "group": "right",
+                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
+                },
+                {
+                  "group": "left",
+                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
+                }
+              ]
+            },
+            "id": "ccdab7e2-7416-4652-be51-ea4ceaef127b",
+            "data": {
+              "type": "tm.Store",
+              "name": "Store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "zIndex": 33
+          },
+          {
+            "position": {
+              "x": 1090,
+              "y": 1205
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
+                },
+                {
+                  "group": "right",
+                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
+                },
+                {
+                  "group": "left",
+                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
+                }
+              ]
+            },
+            "id": "0cfd28c8-cb97-4175-a8af-609e8aee4eab",
+            "data": {
+              "type": "tm.Store",
+              "name": "Store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "zIndex": 34
+          },
+          {
+            "position": {
+              "x": 1400,
+              "y": 1205
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
+                },
+                {
+                  "group": "right",
+                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
+                },
+                {
+                  "group": "left",
+                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
+                }
+              ]
+            },
+            "id": "aa79272f-d213-4d53-87e9-0f06a265cad2",
+            "data": {
+              "type": "tm.Store",
+              "name": "Store",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "zIndex": 35
           }
         ]
       }
