@@ -46,9 +46,11 @@
               "crossingFlows": [
                 "7d8177e5-0105-43e3-b70e-fae41e515524",
                 "31354f53-2553-4796-9d18-b19811d20fbb",
+                "f165fef0-95b2-4cf1-927b-774b8c0d54dc",
                 "9072b948-b94a-4f7b-9a7b-7170006ecd51",
                 "46ac6392-41fe-4c88-9640-593b3b7bc90f",
-                "a8126063-91d8-4957-9872-2577a85b407b"
+                "a8126063-91d8-4957-9872-2577a85b407b",
+                "fc509e29-1c0f-4f25-905b-d7d6cebf01ab"
               ],
               "containedElements": [
                 "116f5318-cd9e-488a-bf26-3beddb24a6d9",
@@ -251,6 +253,38 @@
               "containedElements": [
                 "4fb1dde4-f9a3-4520-9936-872e0eff1a72",
                 "9aa8e1f9-3ac5-4639-b584-0aea0e9d4096"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 64.99999999999932,
+              "y": 732.0000000000005
+            },
+            "size": {
+              "width": 360,
+              "height": 210
+            },
+            "attrs": {
+              "label": {
+                "text": "Staff computers (local storage)"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "f7dec59b-33f0-4de5-b622-cb62f5767f84",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Staff computers (local storage)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "f165fef0-95b2-4cf1-927b-774b8c0d54dc"
+              ],
+              "containedElements": [
+                "93030e86-f7bd-4233-85bc-f828c7c205c9"
               ]
             }
           },
@@ -1188,6 +1222,65 @@
               {
                 "x": 850,
                 "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Downloads / uploads",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "9d712ff8-815b-4c01-b4be-da44a62d8887",
+                "f7dec59b-33f0-4de5-b622-cb62f5767f84"
+              ]
+            },
+            "labels": [
+              "Downloads / uploads"
+            ],
+            "id": "f165fef0-95b2-4cf1-927b-774b8c0d54dc",
+            "source": {
+              "cell": "93030e86-f7bd-4233-85bc-f828c7c205c9",
+              "port": "2bfde115-0eea-4833-9b5a-4f07ed735758"
+            },
+            "target": {
+              "cell": "783a60a2-3829-4ea4-83bc-393edefca6dc",
+              "port": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 620
+              },
+              {
+                "x": 930,
+                "y": 620
               }
             ]
           },
@@ -4281,6 +4374,179 @@
             "target": {
               "cell": "9aa8e1f9-3ac5-4639-b584-0aea0e9d4096",
               "port": "34116083-1d44-4762-b0ee-4b50e521d285"
+            }
+          },
+          {
+            "position": {
+              "x": 154.99999999999932,
+              "y": 816
+            },
+            "size": {
+              "width": 180,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Local copies / downloads"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "2bfde115-0eea-4833-9b5a-4f07ed735758"
+                },
+                {
+                  "group": "right",
+                  "id": "9263eb55-6d51-4645-9e3a-9021d773e232"
+                },
+                {
+                  "group": "bottom",
+                  "id": "d2bdcd20-1158-4898-ac0f-456ad2f84aca"
+                },
+                {
+                  "group": "left",
+                  "id": "0c08ecae-091d-4416-9125-8d5d5045fede"
+                }
+              ]
+            },
+            "id": "93030e86-f7bd-4233-85bc-f828c7c205c9",
+            "zIndex": 49,
+            "data": {
+              "type": "tm.Store",
+              "name": "Local copies / downloads",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "children": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 50,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "9d712ff8-815b-4c01-b4be-da44a62d8887"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "fc509e29-1c0f-4f25-905b-d7d6cebf01ab",
+            "source": {
+              "x": 1420,
+              "y": 320
+            },
+            "target": {
+              "cell": "21b701ba-a425-440f-8256-ea7971544f3f",
+              "port": "b875e175-d9a6-42e8-8366-eb9218e5715c"
             }
           }
         ]
