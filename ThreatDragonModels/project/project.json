@@ -185,7 +185,9 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "df146502-6193-43cd-b215-53dde29a542b"
+              ],
               "containedElements": [
                 "3961f658-8170-4bc2-91a9-c25e7f6bc9f6",
                 "0885476e-7d2e-44a4-a6a2-b10656b0d593"
@@ -3723,7 +3725,7 @@
           {
             "position": {
               "x": 824.9999999999998,
-              "y": 945
+              "y": 965
             },
             "size": {
               "width": 210,
@@ -3847,7 +3849,7 @@
           {
             "position": {
               "x": 1125,
-              "y": 945
+              "y": 965
             },
             "size": {
               "width": 210,
@@ -3970,8 +3972,8 @@
           },
           {
             "position": {
-              "x": 1435,
-              "y": 945
+              "x": 1439.9999999999977,
+              "y": 965
             },
             "size": {
               "width": 210,
@@ -4138,6 +4140,54 @@
               "port": "34116083-1d44-4762-b0ee-4b50e521d285"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 46,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "a273ab91-44e3-47a6-843b-9bacc7f691a4"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "df146502-6193-43cd-b215-53dde29a542b",
+            "source": {
+              "x": 930,
+              "y": 910
+            },
+            "target": {
+              "cell": "0885476e-7d2e-44a4-a6a2-b10656b0d593",
+              "port": "34116083-1d44-4762-b0ee-4b50e521d285"
+            }
           }
         ]
       }
