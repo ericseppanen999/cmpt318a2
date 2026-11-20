@@ -281,8 +281,8 @@
           },
           {
             "position": {
-              "x": 530,
-              "y": 230.00000000000057
+              "x": 525,
+              "y": 240.00000000000057
             },
             "size": {
               "width": 200,
@@ -293,8 +293,8 @@
                 "text": "P1: Delivery request web form"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -391,12 +391,41 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "7e6aba19-2984-4df4-a5c0-aea9d8306c3b",
+                  "title": "A05: False Delivery Requests",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Delivery requests are processed through the web form where client information can be input. These delivery requests entered on the form are unprotected from external users (attackers). These forms are prone to unauthorized modification which can alter client information which can affect confirmation status and client information storage.",
+                  "mitigation": "Possible mitigations:\n- Encrypted web form in transit\n- Digital Signature on each form submission",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 2,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2105,7 +2134,7 @@
             "vertices": [
               {
                 "x": 390,
-                "y": 320
+                "y": 330
               }
             ]
           },
@@ -2578,6 +2607,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 8
   }
 }
