@@ -132,7 +132,7 @@
           },
           {
             "position": {
-              "x": 495,
+              "x": 490,
               "y": 732
             },
             "size": {
@@ -154,7 +154,9 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "8923f54e-a23c-4355-a434-6a795e8e5cd0"
+              ],
               "containedElements": [
                 "5fe4a922-b3df-4fbb-819b-111b537784b8",
                 "b363aba7-a925-4f37-a428-77525d5c8699"
@@ -188,7 +190,7 @@
               "crossingFlows": [],
               "containedElements": [
                 "3961f658-8170-4bc2-91a9-c25e7f6bc9f6",
-                "ccdab7e2-7416-4652-be51-ea4ceaef127b"
+                "0885476e-7d2e-44a4-a6a2-b10656b0d593"
               ]
             }
           },
@@ -219,7 +221,7 @@
               "crossingFlows": [],
               "containedElements": [
                 "1121b42e-82eb-43a7-bb28-eadd059c81de",
-                "0cfd28c8-cb97-4175-a8af-609e8aee4eab"
+                "c556857f-8f6c-418a-8f28-35e7f7451d41"
               ]
             }
           },
@@ -250,7 +252,7 @@
               "crossingFlows": [],
               "containedElements": [
                 "4fb1dde4-f9a3-4520-9936-872e0eff1a72",
-                "aa79272f-d213-4d53-87e9-0f06a265cad2"
+                "9aa8e1f9-3ac5-4639-b584-0aea0e9d4096"
               ]
             }
           },
@@ -2722,8 +2724,8 @@
           },
           {
             "position": {
-              "x": 565,
-              "y": 777
+              "x": 550,
+              "y": 779
             },
             "size": {
               "width": 130,
@@ -3202,14 +3204,17 @@
           },
           {
             "position": {
-              "x": 570,
-              "y": 945
+              "x": 510,
+              "y": 965
             },
             "size": {
-              "width": 120,
+              "width": 210,
               "height": 60
             },
             "attrs": {
+              "text": {
+                "text": "Client records\nassessments, treatment plans"
+              },
               "topLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
@@ -3307,370 +3312,7 @@
             "id": "b363aba7-a925-4f37-a428-77525d5c8699",
             "data": {
               "type": "tm.Store",
-              "name": "Store",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 869.9999999999998,
-              "y": 945
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 33,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
-                },
-                {
-                  "group": "right",
-                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
-                },
-                {
-                  "group": "bottom",
-                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
-                },
-                {
-                  "group": "left",
-                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
-                }
-              ]
-            },
-            "id": "ccdab7e2-7416-4652-be51-ea4ceaef127b",
-            "data": {
-              "type": "tm.Store",
-              "name": "Store",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1170,
-              "y": 945
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 34,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
-                },
-                {
-                  "group": "right",
-                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
-                },
-                {
-                  "group": "bottom",
-                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
-                },
-                {
-                  "group": "left",
-                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
-                }
-              ]
-            },
-            "id": "0cfd28c8-cb97-4175-a8af-609e8aee4eab",
-            "data": {
-              "type": "tm.Store",
-              "name": "Store",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1480,
-              "y": 945
-            },
-            "size": {
-              "width": 120,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "zIndex": 35,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
-                },
-                {
-                  "group": "right",
-                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
-                },
-                {
-                  "group": "bottom",
-                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
-                },
-                {
-                  "group": "left",
-                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
-                }
-              ]
-            },
-            "id": "aa79272f-d213-4d53-87e9-0f06a265cad2",
-            "data": {
-              "type": "tm.Store",
-              "name": "Store",
+              "name": "Client records\nassessments, treatment plans",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4047,12 +3689,457 @@
             ],
             "id": "0ee0ed04-e12f-421b-848b-5ac36b10e04c",
             "source": {
-              "x": 180,
-              "y": 410
+              "cell": "3067e470-19a3-4dfb-ad4c-9e79ca28fd65",
+              "port": "6fb47553-21cd-469d-b344-45165e73a8ba"
             },
             "target": {
               "cell": "de9ecfc5-e2c7-419b-8b7b-fcc908c60bf1",
               "port": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 824.9999999999998,
+              "y": 945
+            },
+            "size": {
+              "width": 210,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Donor records\ncontacts, donation history"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
+                },
+                {
+                  "group": "right",
+                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
+                },
+                {
+                  "group": "left",
+                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
+                }
+              ]
+            },
+            "id": "0885476e-7d2e-44a4-a6a2-b10656b0d593",
+            "data": {
+              "type": "tm.Store",
+              "name": "Donor records\ncontacts, donation history",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "zIndex": 42
+          },
+          {
+            "position": {
+              "x": 1125,
+              "y": 945
+            },
+            "size": {
+              "width": 210,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Autism program data"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
+                },
+                {
+                  "group": "right",
+                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
+                },
+                {
+                  "group": "left",
+                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
+                }
+              ]
+            },
+            "id": "c556857f-8f6c-418a-8f28-35e7f7451d41",
+            "data": {
+              "type": "tm.Store",
+              "name": "Autism program data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "zIndex": 43
+          },
+          {
+            "position": {
+              "x": 1435,
+              "y": 945
+            },
+            "size": {
+              "width": 210,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "HR & payroll records"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "34116083-1d44-4762-b0ee-4b50e521d285"
+                },
+                {
+                  "group": "right",
+                  "id": "998a20ee-8a4d-4961-a486-8b9317aa2abd"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cf59c872-74c8-48f9-91c3-836612901bd7"
+                },
+                {
+                  "group": "left",
+                  "id": "64e03b96-47b9-4e52-9900-5c24f9fb313a"
+                }
+              ]
+            },
+            "id": "9aa8e1f9-3ac5-4639-b584-0aea0e9d4096",
+            "data": {
+              "type": "tm.Store",
+              "name": "HR & payroll records",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            },
+            "zIndex": 44
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 45,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read/write",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "addbfac3-3182-4bbc-a1bb-7f18c95f8e6d"
+              ]
+            },
+            "labels": [
+              "Read/write"
+            ],
+            "id": "8923f54e-a23c-4355-a434-6a795e8e5cd0",
+            "source": {
+              "x": 580,
+              "y": 910
+            },
+            "target": {
+              "cell": "b363aba7-a925-4f37-a428-77525d5c8699",
+              "port": "34116083-1d44-4762-b0ee-4b50e521d285"
             }
           }
         ]
