@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 430,
-              "y": -180.00000000000023
+              "x": 470,
+              "y": -185
             },
             "size": {
               "width": 1180,
@@ -747,58 +747,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Store emails",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Store emails"
-            ],
-            "id": "6645689b-68ea-4c8a-bb09-c33c4919a79b",
-            "source": {
-              "cell": "b93656da-f023-4eda-9a85-dc4e2576cf1a",
-              "port": "b875e175-d9a6-42e8-8366-eb9218e5715c"
-            },
-            "target": {
-              "cell": "ea10c135-10fb-4c19-b69d-e66da2cd597d",
-              "port": "8d68541d-a1cb-4852-aa1c-070a4f161e49"
-            },
-            "vertices": [
-              {
-                "x": 740,
-                "y": 390
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Read emails",
               "description": "",
               "outOfScope": false,
@@ -1241,8 +1189,60 @@
             "parent": "b93656da-f023-4eda-9a85-dc4e2576cf1a"
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store emails",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Store emails"
+            ],
+            "id": "6645689b-68ea-4c8a-bb09-c33c4919a79b",
+            "source": {
+              "cell": "b93656da-f023-4eda-9a85-dc4e2576cf1a",
+              "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+            },
+            "target": {
+              "cell": "ea10c135-10fb-4c19-b69d-e66da2cd597d",
+              "port": "8d68541d-a1cb-4852-aa1c-070a4f161e49"
+            },
+            "vertices": [
+              {
+                "x": 800,
+                "y": 400
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 560,
+              "x": 565,
               "y": 410
             },
             "size": {
