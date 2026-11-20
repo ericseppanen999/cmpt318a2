@@ -568,13 +568,6 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -1545,7 +1538,13 @@
             "target": {
               "cell": "1121b42e-82eb-43a7-bb28-eadd059c81de",
               "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
-            }
+            },
+            "vertices": [
+              {
+                "x": 10,
+                "y": 410
+              }
+            ]
           },
           {
             "position": {
