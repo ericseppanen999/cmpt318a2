@@ -403,80 +403,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Download CSV",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "03a39a8e-5fcb-4dbf-b496-712e04f49a78",
-                  "title": "A02: X",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Download CSV"
-            ],
-            "id": "be3b33c3-3509-4df8-8d55-2ad4173cfbd7",
-            "source": {
-              "cell": "a5e97049-3cd2-485f-8db6-b843c3740727",
-              "port": "e649e483-7316-4b31-80c1-6eff6bfc9ef0"
-            },
-            "target": {
-              "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
-              "port": "63ac6e38-a556-4636-af64-bf9a6c825781"
-            },
-            "vertices": [
-              {
-                "x": 360,
-                "y": 830
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -576,6 +502,80 @@
               {
                 "x": 210,
                 "y": 1090
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Download CSV",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "03a39a8e-5fcb-4dbf-b496-712e04f49a78",
+                  "title": "A02: X",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Download CSV"
+            ],
+            "id": "be3b33c3-3509-4df8-8d55-2ad4173cfbd7",
+            "source": {
+              "cell": "a5e97049-3cd2-485f-8db6-b843c3740727",
+              "port": "e649e483-7316-4b31-80c1-6eff6bfc9ef0"
+            },
+            "target": {
+              "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
+              "port": "63ac6e38-a556-4636-af64-bf9a6c825781"
+            },
+            "vertices": [
+              {
+                "x": 360,
+                "y": 830
               }
             ]
           },
@@ -1376,7 +1376,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Dispatch login",
+              "name": "Dispatch login (shared)",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1392,7 +1392,7 @@
               ]
             },
             "labels": [
-              "Dispatch login"
+              "Dispatch login (shared)"
             ],
             "id": "de080c2d-b544-45f5-9635-2ded91800330",
             "source": {
@@ -1409,10 +1409,24 @@
                 "y": 880
               },
               {
+                "x": 590,
+                "y": 830
+              },
+              {
                 "x": 670,
                 "y": 820
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
