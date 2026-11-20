@@ -43,9 +43,7 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [
-                "07cb9fbc-b132-4c44-a0f0-236aa6dee802"
-              ],
+              "crossingFlows": [],
               "containedElements": [
                 "116f5318-cd9e-488a-bf26-3beddb24a6d9",
                 "b93656da-f023-4eda-9a85-dc4e2576cf1a",
@@ -798,6 +796,62 @@
               {
                 "x": 1010,
                 "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Authenticates",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Authenticates"
+            ],
+            "id": "4079c416-1111-4031-b8d4-6195b9b917f2",
+            "source": {
+              "cell": "116f5318-cd9e-488a-bf26-3beddb24a6d9",
+              "port": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+            },
+            "target": {
+              "cell": "783a60a2-3829-4ea4-83bc-393edefca6dc",
+              "port": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+            },
+            "vertices": [
+              {
+                "x": 750,
+                "y": 270
+              },
+              {
+                "x": 790,
+                "y": 460
               }
             ]
           },
@@ -1876,7 +1930,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Authenticates",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1890,7 +1944,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Authenticates"
             ],
             "id": "8003d47c-2a31-493f-857a-a91ed8a5324b",
             "source": {
@@ -1900,7 +1954,8 @@
             "target": {
               "cell": "b93656da-f023-4eda-9a85-dc4e2576cf1a",
               "port": "e732653d-08e7-4bf9-95b1-a6f807114c67"
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1922,7 +1977,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Authenticates",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1933,22 +1988,26 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "9d712ff8-815b-4c01-b4be-da44a62d8887"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Authenticates"
             ],
             "id": "07cb9fbc-b132-4c44-a0f0-236aa6dee802",
             "source": {
-              "x": 740,
-              "y": 140
+              "cell": "116f5318-cd9e-488a-bf26-3beddb24a6d9",
+              "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
             },
             "target": {
               "cell": "3744dd10-294d-40dd-9b37-612fd42f7c9c",
               "port": "e732653d-08e7-4bf9-95b1-a6f807114c67"
-            }
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": 210
+              }
+            ]
           }
         ]
       }
