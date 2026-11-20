@@ -271,16 +271,16 @@
           },
           {
             "position": {
-              "x": 64.99999999999986,
+              "x": 249.9999999999999,
               "y": 739
             },
             "size": {
-              "width": 360,
-              "height": 210
+              "width": 200,
+              "height": 150
             },
             "attrs": {
               "label": {
-                "text": "TB5 Staff computers (local storage)"
+                "text": "TB5 Staff computers\n(local storage)"
               }
             },
             "visible": true,
@@ -289,7 +289,7 @@
             "id": "f7dec59b-33f0-4de5-b622-cb62f5767f84",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB5 Staff computers (local storage)",
+              "name": "TB5 Staff computers\n(local storage)",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -387,8 +387,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "854e678c-4079-45d0-925a-752be4124bbb",
             "zIndex": -1,
+            "id": "854e678c-4079-45d0-925a-752be4124bbb",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB11 PayPal",
@@ -419,6 +419,7 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
+            "zIndex": -1,
             "id": "640db870-f0b0-4997-9b2d-a6b405bd6cb2",
             "data": {
               "type": "tm.BoundaryBox",
@@ -433,8 +434,40 @@
                 "267744b1-6bb4-4bd9-ad6f-024f2b85f01b",
                 "ebefda9c-0308-4e23-8312-8d14ebe989de"
               ]
+            }
+          },
+          {
+            "position": {
+              "x": 26.249999999999858,
+              "y": 739
             },
-            "zIndex": -1
+            "size": {
+              "width": 190,
+              "height": 150
+            },
+            "attrs": {
+              "label": {
+                "text": "TB13 RBC"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "ddd21ffa-695f-47fb-8d4a-ba30abbd3760",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB13 RBC",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "14a4bfc9-e98a-4aa5-b589-6b9db1752b7f",
+                "4a81c18c-db9f-4983-ac70-72c541fe440e"
+              ],
+              "containedElements": [
+                "d12b862b-0140-4725-911e-82cc17fee21f"
+              ]
+            }
           },
           {
             "position": {
@@ -1578,15 +1611,15 @@
             "vertices": [
               {
                 "x": 380,
-                "y": 770
+                "y": 720
               },
               {
                 "x": 580,
-                "y": 630
+                "y": 580
               },
               {
                 "x": 940,
-                "y": 590
+                "y": 540
               }
             ]
           },
@@ -1895,52 +1928,123 @@
                 "x": 1670,
                 "y": 400
               }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "ddd21ffa-695f-47fb-8d4a-ba30abbd3760"
+              ]
+            },
+            "labels": [
+              "Payments"
             ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "id": "14a4bfc9-e98a-4aa5-b589-6b9db1752b7f",
+            "source": {
+              "x": 80,
+              "y": 360
+            },
+            "target": {
+              "cell": "d12b862b-0140-4725-911e-82cc17fee21f",
+              "port": "e9057f7f-57f3-4f45-afa0-b1a4be8b03ad"
+            },
+            "vertices": [
+              {
+                "x": 20,
+                "y": 620
+              },
+              {
+                "x": 20,
+                "y": 760
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Payout",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "ddd21ffa-695f-47fb-8d4a-ba30abbd3760"
+              ]
+            },
+            "labels": [
+              "Payout"
+            ],
+            "id": "4a81c18c-db9f-4983-ac70-72c541fe440e",
+            "source": {
+              "x": 1330,
+              "y": 810
+            },
+            "target": {
+              "cell": "d12b862b-0140-4725-911e-82cc17fee21f",
+              "port": "471cda78-2bfa-46d9-9ee5-7cac1e28f94d"
+            },
+            "vertices": [
+              {
+                "x": 1100,
+                "y": 690
+              },
+              {
+                "x": 360,
+                "y": 690
+              }
+            ]
           },
           {
             "position": {
@@ -5011,11 +5115,11 @@
           },
           {
             "position": {
-              "x": 155,
-              "y": 849
+              "x": 284.9999999999999,
+              "y": 799
             },
             "size": {
-              "width": 180,
+              "width": 130,
               "height": 60
             },
             "attrs": {
@@ -6061,7 +6165,13 @@
             "target": {
               "cell": "4fb1dde4-f9a3-4520-9936-872e0eff1a72",
               "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
-            }
+            },
+            "vertices": [
+              {
+                "x": -10,
+                "y": 510
+              }
+            ]
           },
           {
             "position": {
@@ -6300,6 +6410,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 67,
             "ports": {
               "groups": {
                 "top": {
@@ -6383,7 +6494,6 @@
               ]
             },
             "id": "541e16d2-7d7e-4597-a04e-6ebebc4e9ee2",
-            "zIndex": 67,
             "data": {
               "type": "tm.Actor",
               "name": "Public users",
@@ -6417,6 +6527,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 68,
             "ports": {
               "groups": {
                 "top": {
@@ -6500,7 +6611,6 @@
               ]
             },
             "id": "a6cc41a1-01df-4513-9684-699c1b06eb56",
-            "zIndex": 68,
             "data": {
               "type": "tm.Actor",
               "name": "Webmaster",
@@ -6534,6 +6644,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 69,
             "ports": {
               "groups": {
                 "top": {
@@ -6617,7 +6728,6 @@
               ]
             },
             "id": "b83f4414-585d-4b37-bf8d-ba1daef3a4ce",
-            "zIndex": 69,
             "data": {
               "type": "tm.Actor",
               "name": "PayPal",
@@ -6651,6 +6761,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 71,
             "ports": {
               "groups": {
                 "top": {
@@ -6747,8 +6858,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 71
+            }
           },
           {
             "position": {
@@ -6774,6 +6884,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 72,
             "ports": {
               "groups": {
                 "top": {
@@ -6871,8 +6982,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 72
+            }
           },
           {
             "shape": "flow",
@@ -6890,6 +7000,7 @@
             },
             "width": 200,
             "height": 100,
+            "zIndex": 73,
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
@@ -6917,8 +7028,7 @@
             "target": {
               "cell": "ebefda9c-0308-4e23-8312-8d14ebe989de",
               "port": "34116083-1d44-4762-b0ee-4b50e521d285"
-            },
-            "zIndex": 73
+            }
           },
           {
             "position": {
@@ -6944,6 +7054,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 74,
             "ports": {
               "groups": {
                 "top": {
@@ -7041,8 +7152,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 74
+            }
           },
           {
             "shape": "flow",
@@ -7064,7 +7174,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Write",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -7080,16 +7190,133 @@
               ]
             },
             "labels": [
-              "Data Flow"
+              "Write"
             ],
             "id": "b66c583e-6361-4107-96a1-1d6d871e3c70",
             "source": {
-              "x": 1840,
-              "y": 470
+              "cell": "4e34a3f4-c5e3-49ac-b91d-56c00241b6d5"
             },
             "target": {
               "cell": "5693649a-dc25-402e-aeba-9fd2876b8806",
               "port": "8d68541d-a1cb-4852-aa1c-070a4f161e49"
+            },
+            "vertices": []
+          },
+          {
+            "position": {
+              "x": 64.99999999999986,
+              "y": 789
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "RBC bank"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "471cda78-2bfa-46d9-9ee5-7cac1e28f94d"
+                },
+                {
+                  "group": "right",
+                  "id": "67cddd2b-9e53-4575-9004-89edbd16d03f"
+                },
+                {
+                  "group": "bottom",
+                  "id": "24e0984f-82f6-402e-9d9e-292dd0385885"
+                },
+                {
+                  "group": "left",
+                  "id": "e9057f7f-57f3-4f45-afa0-b1a4be8b03ad"
+                }
+              ]
+            },
+            "id": "d12b862b-0140-4725-911e-82cc17fee21f",
+            "zIndex": 76,
+            "data": {
+              "type": "tm.Actor",
+              "name": "RBC bank",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
             }
           }
         ]
