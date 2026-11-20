@@ -154,9 +154,7 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [
-                "8923f54e-a23c-4355-a434-6a795e8e5cd0"
-              ],
+              "crossingFlows": [],
               "containedElements": [
                 "5fe4a922-b3df-4fbb-819b-111b537784b8",
                 "b363aba7-a925-4f37-a428-77525d5c8699"
@@ -3746,6 +3744,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 42,
             "ports": {
               "groups": {
                 "top": {
@@ -3843,8 +3842,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 42
+            }
           },
           {
             "position": {
@@ -3870,6 +3868,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 43,
             "ports": {
               "groups": {
                 "top": {
@@ -3967,8 +3966,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 43
+            }
           },
           {
             "position": {
@@ -3994,6 +3992,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 44,
             "ports": {
               "groups": {
                 "top": {
@@ -4091,8 +4090,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 44
+            }
           },
           {
             "shape": "flow",
@@ -4125,22 +4123,21 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "addbfac3-3182-4bbc-a1bb-7f18c95f8e6d"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Read/write"
             ],
             "id": "8923f54e-a23c-4355-a434-6a795e8e5cd0",
             "source": {
-              "x": 580,
-              "y": 910
+              "cell": "5fe4a922-b3df-4fbb-819b-111b537784b8",
+              "port": "b875e175-d9a6-42e8-8366-eb9218e5715c"
             },
             "target": {
               "cell": "b363aba7-a925-4f37-a428-77525d5c8699",
               "port": "34116083-1d44-4762-b0ee-4b50e521d285"
-            }
+            },
+            "vertices": []
           }
         ]
       }
