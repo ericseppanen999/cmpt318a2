@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 470,
-              "y": 100
+              "x": 450,
+              "y": 10
             },
             "size": {
               "width": 1000,
@@ -44,9 +44,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "ba5d35f6-3fc9-4f98-9280-a1c0bf1e828b"
+                "9abe9777-3a56-4b0b-870e-4160b8587044"
               ],
               "containedElements": [
+                "116f5318-cd9e-488a-bf26-3beddb24a6d9",
                 "b93656da-f023-4eda-9a85-dc4e2576cf1a",
                 "3744dd10-294d-40dd-9b37-612fd42f7c9c",
                 "783a60a2-3829-4ea4-83bc-393edefca6dc",
@@ -359,7 +360,7 @@
           {
             "position": {
               "x": 565,
-              "y": 78
+              "y": 88
             },
             "size": {
               "width": 170,
@@ -768,7 +769,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Store files",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -782,7 +783,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Store files"
             ],
             "id": "74c1f480-bc61-4739-9286-487d7f6b3d1c",
             "source": {
@@ -1162,8 +1163,8 @@
           },
           {
             "position": {
-              "x": 1015,
-              "y": 110
+              "x": 1105,
+              "y": 93
             },
             "size": {
               "width": 170,
@@ -1776,6 +1777,58 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Read files\n",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Read files\n"
+            ],
+            "id": "ba5d35f6-3fc9-4f98-9280-a1c0bf1e828b",
+            "source": {
+              "cell": "320315b2-996f-4fa1-b770-9c0ac087f313",
+              "port": "9a8751e9-eeb9-4f03-a3d4-175e4354bb9c"
+            },
+            "target": {
+              "cell": "3744dd10-294d-40dd-9b37-612fd42f7c9c",
+              "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+            },
+            "vertices": [
+              {
+                "x": 1010,
+                "y": 420
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 21,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1794,14 +1847,14 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "ba5d35f6-3fc9-4f98-9280-a1c0bf1e828b",
+            "id": "9abe9777-3a56-4b0b-870e-4160b8587044",
             "source": {
-              "x": 1100,
-              "y": 450
+              "x": 750,
+              "y": 170
             },
             "target": {
-              "cell": "320315b2-996f-4fa1-b770-9c0ac087f313",
-              "port": "9a8751e9-eeb9-4f03-a3d4-175e4354bb9c"
+              "cell": "21b701ba-a425-440f-8256-ea7971544f3f",
+              "port": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
             }
           }
         ]
