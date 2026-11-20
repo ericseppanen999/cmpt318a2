@@ -160,7 +160,9 @@
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
-              "crossingFlows": [],
+              "crossingFlows": [
+                "fb47e5df-09c5-4991-9224-066cbf780b34"
+              ],
               "containedElements": [
                 "5fe4a922-b3df-4fbb-819b-111b537784b8",
                 "b363aba7-a925-4f37-a428-77525d5c8699"
@@ -308,8 +310,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "4e34a3f4-c5e3-49ac-b91d-56c00241b6d5",
             "zIndex": -1,
+            "id": "4e34a3f4-c5e3-49ac-b91d-56c00241b6d5",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB2 OSNS on-prem",
@@ -4702,6 +4704,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 51,
             "ports": {
               "groups": {
                 "top": {
@@ -4785,7 +4788,6 @@
               ]
             },
             "id": "1bc3bf47-c490-4062-8501-2085eecfd8a5",
-            "zIndex": 51,
             "data": {
               "type": "tm.Store",
               "name": "Chat/message history",
@@ -4823,6 +4825,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 52,
             "ports": {
               "groups": {
                 "top": {
@@ -4906,7 +4909,6 @@
               ]
             },
             "id": "1e4ad86f-644c-4b62-bb6b-b55c9f45ffbb",
-            "zIndex": 52,
             "data": {
               "type": "tm.Actor",
               "name": "External emails",
@@ -5027,8 +5029,8 @@
             ],
             "id": "10260fae-0fbe-4dd1-ad68-e02f9603991c",
             "source": {
-              "x": 290,
-              "y": 510
+              "cell": "1e4ad86f-644c-4b62-bb6b-b55c9f45ffbb",
+              "port": "f72a52a4-f635-4ec3-9b0d-5cec490b8867"
             },
             "target": {
               "cell": "b93656da-f023-4eda-9a85-dc4e2576cf1a",
@@ -5062,6 +5064,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 55,
             "ports": {
               "groups": {
                 "top": {
@@ -5145,7 +5148,6 @@
               ]
             },
             "id": "d67bf0ae-d453-4c1f-b996-d89d81eba25b",
-            "zIndex": 55,
             "data": {
               "type": "tm.Process",
               "name": "Synology\nbackup job",
@@ -5209,6 +5211,54 @@
             "target": {
               "cell": "76257c3e-bfbd-4661-a026-fa0c4b5094e4",
               "port": "b9e157dd-6476-410b-bfcc-74fc22f5cc55"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 57,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "addbfac3-3182-4bbc-a1bb-7f18c95f8e6d"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "fb47e5df-09c5-4991-9224-066cbf780b34",
+            "source": {
+              "x": 180,
+              "y": 420
+            },
+            "target": {
+              "cell": "5fe4a922-b3df-4fbb-819b-111b537784b8",
+              "port": "e732653d-08e7-4bf9-95b1-a6f807114c67"
             }
           }
         ]
