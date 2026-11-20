@@ -18,7 +18,575 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 449.9999999999966,
+              "y": 20.000000000005343
+            },
+            "size": {
+              "width": 1000,
+              "height": 680
+            },
+            "attrs": {
+              "label": {
+                "text": "TB1 Microsoft 365 Tenant"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "9d712ff8-815b-4c01-b4be-da44a62d8887",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB1 Microsoft 365 Tenant",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "116f5318-cd9e-488a-bf26-3beddb24a6d9"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 155,
+              "y": 20.000000000000284
+            },
+            "size": {
+              "width": 220,
+              "height": 190
+            },
+            "attrs": {
+              "label": {
+                "text": "NordLayer"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "aa92a1f0-ff3a-4014-807f-930c936d2f8f",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "NordLayer",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "de9ecfc5-e2c7-419b-8b7b-fcc908c60bf1"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 89.99999999999997,
+              "y": 464
+            },
+            "size": {
+              "width": 280,
+              "height": 220
+            },
+            "attrs": {
+              "label": {
+                "text": "TB3 Employee Phones"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "21e80b32-9d28-4d58-b24a-e01a4bc21966",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB3 Employee Phones",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": [
+                "b5522ba7-4641-44d3-9e86-bf32bcee3bd3"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 170,
+              "y": 310
+            },
+            "size": {
+              "width": 190,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "E1 OSNS Employees"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "5a1243e1-f107-47d8-857f-b146508921b5"
+                },
+                {
+                  "group": "right",
+                  "id": "b8316440-7712-4159-af05-ff492aa1ebcb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "6fb47553-21cd-469d-b344-45165e73a8ba"
+                },
+                {
+                  "group": "left",
+                  "id": "dc5770b5-26f0-43bd-9b28-aa150fadc43f"
+                }
+              ]
+            },
+            "id": "3067e470-19a3-4dfb-ad4c-9e79ca28fd65",
+            "zIndex": 0,
+            "data": {
+              "type": "tm.Actor",
+              "name": "E1 OSNS Employees",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 180,
+              "y": 50.000000000000284
+            },
+            "size": {
+              "width": 170,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "P1 NordLayer VPN"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+                },
+                {
+                  "group": "right",
+                  "id": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+                },
+                {
+                  "group": "left",
+                  "id": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+                }
+              ]
+            },
+            "id": "de9ecfc5-e2c7-419b-8b7b-fcc908c60bf1",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Process",
+              "name": "P1 NordLayer VPN",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 610,
+              "y": 210.00000000000028
+            },
+            "size": {
+              "width": 120,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "P1\nEntra ID Sign-in"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+                },
+                {
+                  "group": "right",
+                  "id": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+                },
+                {
+                  "group": "left",
+                  "id": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+                }
+              ]
+            },
+            "id": "116f5318-cd9e-488a-bf26-3beddb24a6d9",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Process",
+              "name": "P1\nEntra ID Sign-in",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 139.99999999999997,
+              "y": 518
+            },
+            "size": {
+              "width": 180,
+              "height": 150
+            },
+            "attrs": {
+              "text": {
+                "text": "P2\nMicrosoft Authenticator"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e732653d-08e7-4bf9-95b1-a6f807114c67"
+                },
+                {
+                  "group": "right",
+                  "id": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+                },
+                {
+                  "group": "bottom",
+                  "id": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+                },
+                {
+                  "group": "left",
+                  "id": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
+                }
+              ]
+            },
+            "id": "b5522ba7-4641-44d3-9e86-bf32bcee3bd3",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Process",
+              "name": "P2\nMicrosoft Authenticator",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
