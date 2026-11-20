@@ -3805,6 +3805,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 38,
             "ports": {
               "groups": {
                 "top": {
@@ -3888,7 +3889,6 @@
               ]
             },
             "id": "01e7920d-602f-43e5-b43e-a24f2c76102c",
-            "zIndex": 38,
             "data": {
               "type": "tm.Actor",
               "name": "IT Admin Accounts",
@@ -3945,7 +3945,13 @@
             "target": {
               "cell": "01e7920d-602f-43e5-b43e-a24f2c76102c",
               "port": "71bb0409-b812-40ad-966f-fb7051acab9c"
-            }
+            },
+            "vertices": [
+              {
+                "x": 810,
+                "y": -50
+              }
+            ]
           }
         ]
       }
