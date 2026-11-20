@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 450,
-              "y": 50
+              "x": 470,
+              "y": 100
             },
             "size": {
               "width": 1000,
@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "9d712ff8-815b-4c01-b4be-da44a62d8887",
             "zIndex": -1,
+            "id": "9d712ff8-815b-4c01-b4be-da44a62d8887",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB1 Microsoft 365 Tenant",
@@ -44,10 +44,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "25dc0062-571d-4ef3-91f5-ab6f76d58bed"
+                "ba5d35f6-3fc9-4f98-9280-a1c0bf1e828b"
               ],
               "containedElements": [
-                "116f5318-cd9e-488a-bf26-3beddb24a6d9",
                 "b93656da-f023-4eda-9a85-dc4e2576cf1a",
                 "3744dd10-294d-40dd-9b37-612fd42f7c9c",
                 "783a60a2-3829-4ea4-83bc-393edefca6dc",
@@ -81,8 +80,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "aa92a1f0-ff3a-4014-807f-930c936d2f8f",
             "zIndex": -1,
+            "id": "aa92a1f0-ff3a-4014-807f-930c936d2f8f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "NordLayer",
@@ -111,8 +110,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "21e80b32-9d28-4d58-b24a-e01a4bc21966",
             "zIndex": -1,
+            "id": "21e80b32-9d28-4d58-b24a-e01a4bc21966",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB3 Employee Phones",
@@ -148,6 +147,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 0,
             "ports": {
               "groups": {
                 "top": {
@@ -231,7 +231,6 @@
               ]
             },
             "id": "3067e470-19a3-4dfb-ad4c-9e79ca28fd65",
-            "zIndex": 0,
             "data": {
               "type": "tm.Actor",
               "name": "E1 OSNS Employees",
@@ -265,6 +264,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -348,7 +348,6 @@
               ]
             },
             "id": "de9ecfc5-e2c7-419b-8b7b-fcc908c60bf1",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "P2 NordLayer VPN",
@@ -385,6 +384,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -468,7 +468,6 @@
               ]
             },
             "id": "116f5318-cd9e-488a-bf26-3beddb24a6d9",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "P1\nEntra ID Sign-in",
@@ -505,6 +504,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -588,7 +588,6 @@
               ]
             },
             "id": "b5522ba7-4641-44d3-9e86-bf32bcee3bd3",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "P2\nMicrosoft Authenticator",
@@ -757,6 +756,58 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "74c1f480-bc61-4739-9286-487d7f6b3d1c",
+            "source": {
+              "cell": "3744dd10-294d-40dd-9b37-612fd42f7c9c",
+              "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+            },
+            "target": {
+              "cell": "320315b2-996f-4fa1-b770-9c0ac087f313",
+              "port": "9a8751e9-eeb9-4f03-a3d4-175e4354bb9c"
+            },
+            "vertices": [
+              {
+                "x": 1010,
+                "y": 320
+              }
+            ]
+          },
+          {
             "position": {
               "x": 565,
               "y": 290.00000000000534
@@ -777,6 +828,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -873,8 +925,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 11
+            }
           },
           {
             "position": {
@@ -897,6 +948,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -993,8 +1045,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 12
+            }
           },
           {
             "position": {
@@ -1017,6 +1068,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1113,8 +1165,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 13
+            }
           },
           {
             "position": {
@@ -1137,6 +1188,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1233,8 +1285,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 14
+            }
           },
           {
             "position": {
@@ -1260,6 +1311,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1343,7 +1395,6 @@
               ]
             },
             "id": "76257c3e-bfbd-4661-a026-fa0c4b5094e4",
-            "zIndex": 15,
             "data": {
               "type": "tm.Store",
               "name": "OneDrive files\n(Personal)",
@@ -1362,8 +1413,8 @@
           },
           {
             "position": {
-              "x": 1045,
-              "y": 315.00000000000534
+              "x": 1065,
+              "y": 325.00000000000534
             },
             "size": {
               "width": 150,
@@ -1384,6 +1435,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1467,7 +1519,6 @@
               ]
             },
             "id": "320315b2-996f-4fa1-b770-9c0ac087f313",
-            "zIndex": 16,
             "data": {
               "type": "tm.Store",
               "name": "SharePoint files",
@@ -1508,6 +1559,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 17,
             "ports": {
               "groups": {
                 "top": {
@@ -1605,8 +1657,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 17
+            }
           },
           {
             "shape": "flow",
@@ -1639,17 +1690,15 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "9d712ff8-815b-4c01-b4be-da44a62d8887"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Store files"
             ],
             "id": "25dc0062-571d-4ef3-91f5-ab6f76d58bed",
             "source": {
-              "x": 1080,
-              "y": 430
+              "cell": "783a60a2-3829-4ea4-83bc-393edefca6dc",
+              "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
             },
             "target": {
               "cell": "76257c3e-bfbd-4661-a026-fa0c4b5094e4",
@@ -1682,7 +1731,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Read files",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1696,7 +1745,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Read files"
             ],
             "id": "7987771c-772a-4ed6-8123-a9c515ce64a1",
             "source": {
@@ -1706,6 +1755,60 @@
             "target": {
               "cell": "783a60a2-3829-4ea4-83bc-393edefca6dc",
               "port": "8bda2da1-ca49-420b-9c34-bad2ac7bac42"
+            },
+            "vertices": [
+              {
+                "x": 1010,
+                "y": 630
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 20,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "9d712ff8-815b-4c01-b4be-da44a62d8887"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ba5d35f6-3fc9-4f98-9280-a1c0bf1e828b",
+            "source": {
+              "x": 1100,
+              "y": 450
+            },
+            "target": {
+              "cell": "320315b2-996f-4fa1-b770-9c0ac087f313",
+              "port": "9a8751e9-eeb9-4f03-a3d4-175e4354bb9c"
             }
           }
         ]
