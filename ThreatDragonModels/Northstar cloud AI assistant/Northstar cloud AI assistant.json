@@ -989,8 +989,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "An attacker might phish a staff member's credentials through various means and then assume their identity through the identity provider (P1). The identity provider issues a valid token, so the portal accepts them. Then, the attacker is let through to access the tenant's data as a staff member would.",
-                  "mitigation": "Require MFA for all staff accounts on P1 and have device attestation and sign-in alerts from new devices and locations. So, the possession of a staff member's credentials does not allow unconditional access, and any anomalous sign-ins are flagged for review.",
+                  "description": "This threat occurs when an attacker phishes a staff member's credentials through various means and then assume their identity through the identity provider (P1). Since the identity provider issues a valid token, the portal accepts it unconditionally and lets the attack through. Then, the attacker is able to access the tenant's data as any ordinary staff member would.",
+                  "mitigation": "To mitigate this threat, there are key credential controls to put in place. Require MFA (assumption that this is not already enabled) for all staff accounts on P1 and have device attestation as well as sign-in alerts from new devices/locations. The result is that the possession of a staff member's credentials does not allow unconditional access, and any anomalous sign-ins are flagged for review.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -998,7 +998,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 5,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -2149,21 +2149,6 @@
               "cell": "91c38a1c-f98b-4eb6-aaa9-30c8678a907d",
               "port": "9e8f9c3c-90d4-4106-aa10-a68eec85519a"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "vertices": [
               {
                 "x": 880,
@@ -2313,8 +2298,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
-                  "description": "Staff members have the final send-off on when an email is sent, but no record is kept of who approved what. So, in the case that the \"wrong\" email is sent, there is no way to trace responsibilities back to a specific actor and fully observe what happened. ",
-                  "mitigation": "The service P4 could be extended to additionally log every single approval or denial with staff identifiers, as well as information about the emails themselves. Also, make S3 such that existing entries cannot be deleted or modified. Consequently, records cannot be altered by anyone and everything can be traced back to a staff member.",
+                  "description": "Staff members have the final send-off on when an email is sent, but there exists no record of who approved or denied what. So, in the case that the \"wrong\" email (or, perhaps no email, in the denial path) is sent, there is no way to trace responsibilities back to a specific actor and fully observe what happened. Consequently, a staff member could simply shy away from a malicious or \"incorrect\" decision motivated by fear of consequences.",
+                  "mitigation": "The service P4 could be extended to additionally log every single approval or denial with staff identifiers, as well as information about the emails themselves. Also, S3 could be made such that existing entries cannot be deleted or modified. So, S3 is now a source of truth, as records cannot be altered by anyone and everything can be traced back to a staff member.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
@@ -2323,7 +2308,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "repudiation": 2,
+                "repudiation": 5,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -2777,8 +2762,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Denial of service",
-                  "description": "In the scenario when a malicious actor uploads many large junk files, the ingestion worker becomes busy processing them before beginning to process other genuine documents. Hence, they are either delayed or never indexed.",
-                  "mitigation": "First, P5 could have a hard file size limit and number of documents limit specified in a quota. Second, in P7, process documents in a queue with a timeout value that eventually evicts too-large or documents identified as malicious. Consequently, oversized files are rejected outright, and documents that take too long don't block the worker for other documents.",
+                  "description": "Since documents are unconditionally accepted, and consequently ingested by P7, there is a scenario when a malicious actor uploads many large junk files and the ingestion worker becomes busy processing them before beginning to process other genuine documents. In this case, the processing of genuine documents is delayed (or missed) as the worker is occupied, so the accuracy of downstream responses can be incomplete or inaccurate. ",
+                  "mitigation": "In order to best mitigate this threat, P5 could have a hard file size limit and number of documents limit specified in a quota per each tenant. Second, the ingestion worker (P7) could process documents in a queue with some well-defined timeout value that eventually evicts too-large (similar to a CPU scheduler) or documents identified as malicious. Consequently, oversized files are rejected outright, and documents that take too long don't block the worker for other genuine documents. More complex solutions could exist, but this mitigation keeps the price and workload manageable.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -2791,7 +2776,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 2
+                "denialOfService": 3
               }
             },
             "labels": [
@@ -2806,16 +2791,6 @@
               "cell": "2330a553-d3c0-4d33-9677-af50e4158b08",
               "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "vertices": [
               {
                 "x": 1490,
@@ -2826,88 +2801,6 @@
                 "y": 420
               }
             ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 41,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Submit tickets / PDF attachments",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "3ff2d42d-7995-4b91-9515-4b5b25c93664",
-                  "title": "B01: Malicious documents carry prompt-injection text",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "In the case that an attacker uploads some malicious PDF with hidden prompt-injection instructions intended for an LLM, the document is treated like any other, so it is indexed and retrieved like normal. Later, if it's retrieved, the instructions might be able to cause intended harm.",
-                  "mitigation": "Documents can be labeled as \"not trusted\" by the ingestion worker (P7) when indexing. Alternatively, data could be passed to the LLM (by P6) as quoted data, and the structure could enforce that such data cannot be treated as instructions. So, prompt injected text could change the wording of an output but not lead to any dangerous actions.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 4,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Submit tickets / PDF attachments"
-            ],
-            "id": "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
-            "source": {
-              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
-              "port": "9e8f9c3c-90d4-4106-aa10-a68eec85519a"
-            },
-            "target": {
-              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 90
-              }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
           },
           {
             "shape": "flow",
@@ -2947,8 +2840,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
-                  "description": "P6 sends ticket content and actual passages from internal documents to an external LLM provider, which could potentially store or retain prompts and information. The consequence is that internal tenant data now lives outside of the Northstar trust boundary and could be exposed by a breach to the LLM provider. ",
-                  "mitigation": "Ensure that the provider has a \"no retention\" policy and agree on a policy surrounding data processing and how it can be observed. Also, P6 could strip any confidential information or identifiers before sending to the provider. This way, the overall amount of data leaving the Northstar trust boundary is less, and the provider is legally forbidden from retaining it, barring some loophole.",
+                  "description": "When a client's question is forwarded (by P6) to the external LLM provider, ticket content and actual passages from internal documents are also passed through. This means that the third-party could potentially store or retain prompts and information, unbeknownst to the customer. Now, internal tenant data potentially lives outside of the Northstar trust boundary and could be exposed by a breach to the LLM provider or exposed through various means (such as LLM training). ",
+                  "mitigation": "To best mitigate this threat, Northstar could ensure that the provider has a \"no retention\" policy and agree on how data processing should be carried out and, more importantly, observed. Also, P6 could attempt to strip any confidential information or identifiers before sending to the provider. This way, the overall amount of data leaving the Northstar trust boundary is less, and the provider is legally forbidden from retaining it, barring some loophole.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
@@ -2961,7 +2854,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             },
@@ -2976,6 +2869,72 @@
             "target": {
               "cell": "3225946e-b151-4e43-9215-4f91b6d141b3",
               "port": "75162ad6-8ace-48cb-955d-804b701aab98"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 43,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Submit tickets / PDF attachments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3ff2d42d-7995-4b91-9515-4b5b25c93664",
+                  "title": "B01: Malicious documents carry prompt-injection text",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "In the case that an attacker uploads some malicious PDF with hidden prompt-injection instructions intended for an LLM, the document is treated like any other, so it is indexed and retrieved like normal. Later, if it's retrieved, the instructions might be able to cause intended harm.",
+                  "mitigation": "Documents can be labeled as \"not trusted\" by the ingestion worker (P7) when indexing. Alternatively, data could be passed to the LLM (by P6) as quoted data, and the structure could enforce that such data cannot be treated as instructions. So, prompt injected text could change the wording of an output but not lead to any dangerous actions.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 5,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Submit tickets / PDF attachments"
+            ],
+            "id": "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
+            "source": {
+              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
+              "port": "9e8f9c3c-90d4-4106-aa10-a68eec85519a"
+            },
+            "target": {
+              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
+              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
             },
             "tools": {
               "items": [
@@ -3073,90 +3032,16 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 90
+              }
+            ]
           }
         ],
         "description": "Assumptions: The ticket service is part of the portal, staff approval occurs in the portal UI, audit events don't specify who (which staff member) approved/denied an action, the LLM providers data processing agreement is unspecified, staff sign-in doesn't require MFA, and the portal has no upload quotas on size or number."
