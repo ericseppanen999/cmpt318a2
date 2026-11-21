@@ -2738,82 +2738,6 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 40,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Uploaded documents",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "58f9c11c-8657-486b-8d44-61a6f07e2846",
-                  "title": "B05: Many large documents get the Ingestion Worker stuck processing them",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Since documents are unconditionally accepted, and consequently ingested by P7, there is a scenario when a malicious actor uploads many large junk files and the ingestion worker becomes busy processing them before beginning to process other genuine documents. In this case, the processing of genuine documents is delayed (or missed) as the worker is occupied, so the accuracy of downstream responses can be incomplete or inaccurate. ",
-                  "mitigation": "In order to best mitigate this threat, P5 could have a hard file size limit and number of documents limit specified in a quota per each tenant. Second, the ingestion worker (P7) could process documents in a queue with some well-defined timeout value that eventually evicts too-large (similar to a CPU scheduler) or documents identified as malicious. Consequently, oversized files are rejected outright, and documents that take too long don't block the worker for other genuine documents. More complex solutions could exist, but this mitigation keeps the price and workload manageable.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 3
-              }
-            },
-            "labels": [
-              "Uploaded documents"
-            ],
-            "id": "f934c655-08d6-40f9-b31d-a0eec7f0087d",
-            "source": {
-              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "3ab1b74f-bdfc-495d-a1a6-25ffd2bbb359"
-            },
-            "target": {
-              "cell": "2330a553-d3c0-4d33-9677-af50e4158b08",
-              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
-            },
-            "vertices": [
-              {
-                "x": 1490,
-                "y": 350
-              },
-              {
-                "x": 1535,
-                "y": 420
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
             "zIndex": 42,
             "connector": "smooth",
             "data": {
@@ -3037,6 +2961,86 @@
               {
                 "x": 560,
                 "y": 90
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 44,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Uploaded documents",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "58f9c11c-8657-486b-8d44-61a6f07e2846",
+                  "title": "B05: Many large documents get the Ingestion Worker stuck processing them",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Since documents are unconditionally accepted, and consequently ingested by P7, there is a scenario when a malicious actor uploads many large junk files and the ingestion worker becomes busy processing them before beginning to process other genuine documents. In this case, the processing of genuine documents is delayed (or missed) as the worker is occupied, so the accuracy of downstream responses can be incomplete or inaccurate. ",
+                  "mitigation": "In order to best mitigate this threat, P5 could have a hard file size limit and number of documents limit specified in a quota per each tenant. Second, the ingestion worker (P7) could process documents in a queue with some well-defined timeout value that eventually evicts too-large (similar to a CPU scheduler) or documents identified as malicious. Consequently, oversized files are rejected outright, and documents that take too long don't block the worker for other genuine documents. More complex solutions could exist, but this mitigation keeps the price and workload manageable.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 3
+              }
+            },
+            "labels": [
+              "Uploaded documents"
+            ],
+            "id": "f934c655-08d6-40f9-b31d-a0eec7f0087d",
+            "source": {
+              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
+              "port": "3ab1b74f-bdfc-495d-a1a6-25ffd2bbb359"
+            },
+            "target": {
+              "cell": "2330a553-d3c0-4d33-9677-af50e4158b08",
+              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
+            },
+            "vertices": [
+              {
+                "x": 1490,
+                "y": 350
+              },
+              {
+                "x": 1535,
+                "y": 420
+              },
+              {
+                "x": 1535,
+                "y": 550
               }
             ]
           }
