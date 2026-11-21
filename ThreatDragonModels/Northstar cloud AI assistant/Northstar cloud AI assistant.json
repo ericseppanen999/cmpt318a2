@@ -30,7 +30,7 @@
             },
             "attrs": {
               "label": {
-                "text": "Northstar application"
+                "text": "TB1: Northstar application"
               }
             },
             "visible": true,
@@ -39,7 +39,7 @@
             "id": "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "Northstar application",
+              "name": "TB1: Northstar application",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -64,6 +64,105 @@
                 "edfdf35f-938b-4135-bb3a-fa293d5141eb"
               ]
             }
+          },
+          {
+            "position": {
+              "x": 20,
+              "y": 850
+            },
+            "size": {
+              "width": 180,
+              "height": 170
+            },
+            "attrs": {
+              "label": {
+                "text": "TB2: LLM Provider"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "24935bc3-0f15-4041-8363-f47323ae0a6c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB2: LLM Provider",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "3d4b9f5e-c078-4f8f-8a5b-8805701350df",
+                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f"
+              ],
+              "containedElements": [
+                "3225946e-b151-4e43-9215-4f91b6d141b3"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": -47.5,
+              "y": 600
+            },
+            "size": {
+              "width": 180,
+              "height": 170
+            },
+            "attrs": {
+              "label": {
+                "text": "TB2: Email Provider"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "afd33c75-7245-464d-8860-1738bd871f44",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB2: Email Provider",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "a89a782e-7568-4534-b71b-51b65e8996b2",
+                "9df180d8-3d88-4b01-bcdd-aa6f6dc81e6e"
+              ],
+              "containedElements": [
+                "c4653ad7-2ab3-4116-a401-a3f5ca3711dd"
+              ]
+            },
+            "zIndex": -1
+          },
+          {
+            "position": {
+              "x": 315,
+              "y": 120
+            },
+            "size": {
+              "width": 180,
+              "height": 200
+            },
+            "attrs": {
+              "label": {
+                "text": "TB2: Identity Provider"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "234c965b-af23-4af8-9f6e-954548e9d3c0",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "TB2: Identity Provider",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
+                "b111a6c8-8283-4b95-b564-28760a55403d"
+              ],
+              "containedElements": [
+                "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9"
+              ]
+            },
+            "zIndex": -1
           },
           {
             "position": {
@@ -310,7 +409,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Portal"
+                "text": "P5: Portal"
               },
               "body": {
                 "stroke": "#333333",
@@ -406,7 +505,7 @@
             "id": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
             "data": {
               "type": "tm.Process",
-              "name": "Portal",
+              "name": "P5: Portal",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -451,7 +550,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
+                "afd33c75-7245-464d-8860-1738bd871f44"
               ]
             },
             "labels": [
@@ -612,7 +712,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "afd33c75-7245-464d-8860-1738bd871f44"
+              ]
             },
             "labels": [
               "Email"
@@ -754,8 +856,8 @@
                 "y": 730
               },
               {
-                "x": 890,
-                "y": 790
+                "x": 970,
+                "y": 770
               }
             ]
           },
@@ -770,7 +872,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Identity provider"
+                "text": "P1: Identity provider"
               },
               "body": {
                 "stroke": "#333333",
@@ -866,7 +968,7 @@
             "id": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
             "data": {
               "type": "tm.Process",
-              "name": "Identity provider",
+              "name": "P1: Identity provider",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -890,7 +992,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Ingestion Worker"
+                "text": "P7: Ingestion Worker"
               },
               "body": {
                 "stroke": "#333333",
@@ -986,7 +1088,7 @@
             "id": "2330a553-d3c0-4d33-9677-af50e4158b08",
             "data": {
               "type": "tm.Process",
-              "name": "Ingestion Worker",
+              "name": "P7: Ingestion Worker",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1066,7 +1168,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Cloud Object Storage"
+                "text": "S2: Cloud Object Storage"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1165,7 +1267,7 @@
             "id": "4b427bcc-1b03-4e48-9ce1-5fc1a597e71e",
             "data": {
               "type": "tm.Store",
-              "name": "Cloud Object Storage",
+              "name": "S2: Cloud Object Storage",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1190,7 +1292,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Shared vector index\n\n- Tenant identifier\n- Access labels"
+                "text": "S1: Shared vector index\n\n- Tenant identifier\n- Access labels"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1289,7 +1391,7 @@
             "id": "af6150c6-9243-499d-ab8c-6d95835877d0",
             "data": {
               "type": "tm.Store",
-              "name": "Shared vector index\n\n- Tenant identifier\n- Access labels",
+              "name": "S1: Shared vector index\n\n- Tenant identifier\n- Access labels",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1314,7 +1416,7 @@
             },
             "attrs": {
               "text": {
-                "text": "LLM Provider"
+                "text": "P3: LLM Provider"
               },
               "body": {
                 "stroke": "#333333",
@@ -1410,7 +1512,7 @@
             "id": "3225946e-b151-4e43-9215-4f91b6d141b3",
             "data": {
               "type": "tm.Process",
-              "name": "LLM Provider",
+              "name": "P3: LLM Provider",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1429,12 +1531,12 @@
               "y": 730
             },
             "size": {
-              "width": 120,
-              "height": 120
+              "width": 150,
+              "height": 140
             },
             "attrs": {
               "text": {
-                "text": "Assistant backend"
+                "text": "P6: Assistant backend"
               },
               "body": {
                 "stroke": "#333333",
@@ -1530,7 +1632,7 @@
             "id": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
             "data": {
               "type": "tm.Process",
-              "name": "Assistant backend",
+              "name": "P6: Assistant backend",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1674,7 +1776,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
+                "24935bc3-0f15-4041-8363-f47323ae0a6c"
               ]
             },
             "labels": [
@@ -1702,7 +1805,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Tool gateway"
+                "text": "P4: Tool gateway"
               },
               "body": {
                 "stroke": "#333333",
@@ -1798,7 +1901,7 @@
             "id": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
             "data": {
               "type": "tm.Process",
-              "name": "Tool gateway",
+              "name": "P4: Tool gateway",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1858,6 +1961,11 @@
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -1965,7 +2073,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Email service"
+                "text": "P2: Email service"
               },
               "body": {
                 "stroke": "#333333",
@@ -2061,7 +2169,7 @@
             "id": "c4653ad7-2ab3-4116-a401-a3f5ca3711dd",
             "data": {
               "type": "tm.Process",
-              "name": "Email service",
+              "name": "P2: Email service",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2411,12 +2519,8 @@
             },
             "vertices": [
               {
-                "x": 540,
-                "y": 160
-              },
-              {
-                "x": 580,
-                "y": 160
+                "x": 560,
+                "y": 90
               }
             ]
           },
@@ -2452,7 +2556,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
+                "234c965b-af23-4af8-9f6e-954548e9d3c0"
               ]
             },
             "labels": [
@@ -2505,7 +2610,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "234c965b-af23-4af8-9f6e-954548e9d3c0"
+              ]
             },
             "labels": [
               "Sign-in"
@@ -2716,7 +2823,8 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
+                "24935bc3-0f15-4041-8363-f47323ae0a6c"
               ]
             },
             "labels": [
