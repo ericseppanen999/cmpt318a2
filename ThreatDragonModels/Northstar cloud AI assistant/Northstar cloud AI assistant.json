@@ -109,7 +109,7 @@
             },
             "attrs": {
               "label": {
-                "text": "TB2: Email Provider"
+                "text": "TB3: Email Provider"
               }
             },
             "visible": true,
@@ -117,7 +117,7 @@
             "id": "afd33c75-7245-464d-8860-1738bd871f44",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB2: Email Provider",
+              "name": "TB3: Email Provider",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -142,7 +142,7 @@
             },
             "attrs": {
               "label": {
-                "text": "TB2: Identity Provider"
+                "text": "TB4: Identity Provider"
               }
             },
             "visible": true,
@@ -150,7 +150,7 @@
             "id": "234c965b-af23-4af8-9f6e-954548e9d3c0",
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB2: Identity Provider",
+              "name": "TB4: Identity Provider",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -875,8 +875,8 @@
                 "text": "P1: Identity provider"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -973,12 +973,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "74dc54c5-cdf8-4758-bf4f-4786eb2118c2",
+                  "title": "B04: An attacker phishes a staff member's credentials and signs in as them",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1100,62 +1122,6 @@
               "privilegeLevel": "",
               "threats": []
             }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 14,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Uploaded documents",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Uploaded documents"
-            ],
-            "id": "f934c655-08d6-40f9-b31d-a0eec7f0087d",
-            "source": {
-              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "3ab1b74f-bdfc-495d-a1a6-25ffd2bbb359"
-            },
-            "target": {
-              "cell": "2330a553-d3c0-4d33-9677-af50e4158b08",
-              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
-            },
-            "vertices": [
-              {
-                "x": 1490,
-                "y": 350
-              },
-              {
-                "x": 1535,
-                "y": 420
-              }
-            ]
           },
           {
             "position": {
@@ -2259,14 +2225,16 @@
             },
             "attrs": {
               "text": {
-                "text": "Audit Store\n\nAccess & Action events"
+                "text": "S3: Audit Store\n\nAccess & Action events"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2358,18 +2326,38 @@
             "id": "edfdf35f-938b-4135-bb3a-fa293d5141eb",
             "data": {
               "type": "tm.Store",
-              "name": "Audit Store\n\nAccess & Action events",
+              "name": "S3: Audit Store\n\nAccess & Action events",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "18126885-0ea4-4bbc-b76d-c6b34e133489",
+                  "title": "B03: Approvals aren't linked to a specific staff member",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2474,7 +2462,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2495,15 +2484,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "3ff2d42d-7995-4b91-9515-4b5b25c93664",
+                  "title": "B01: Malicious documents carry prompt-injection text",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Submit tickets / PDF attachments"
@@ -2576,60 +2584,6 @@
               {
                 "x": 800,
                 "y": 240
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 33,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Sign-in",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "234c965b-af23-4af8-9f6e-954548e9d3c0"
-              ]
-            },
-            "labels": [
-              "Sign-in"
-            ],
-            "id": "b111a6c8-8283-4b95-b564-28760a55403d",
-            "source": {
-              "cell": "91c38a1c-f98b-4eb6-aaa9-30c8678a907d",
-              "port": "567f255d-c727-4ba6-8946-8a69d92d6dfe"
-            },
-            "target": {
-              "cell": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
-              "port": "3c423e84-a405-4bc9-a5bf-a2584cd656ee"
-            },
-            "vertices": [
-              {
-                "x": 200,
-                "y": 235
               }
             ]
           },
@@ -2795,7 +2749,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2816,16 +2771,35 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "e0f1b83c-5e59-4382-a868-7e31da741f67",
+                  "title": "B02: Sensitive data is sent to the external LLM provider and potentially stored there",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
                 "24935bc3-0f15-4041-8363-f47323ae0a6c"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Question & selected passages"
@@ -2885,12 +2859,327 @@
               "cell": "af6150c6-9243-499d-ab8c-6d95835877d0",
               "port": "1a37c162-708d-423c-bbf8-7354a3509406"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 39,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Sign-in",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "234c965b-af23-4af8-9f6e-954548e9d3c0"
+              ]
+            },
+            "labels": [
+              "Sign-in"
+            ],
+            "id": "b111a6c8-8283-4b95-b564-28760a55403d",
+            "source": {
+              "cell": "91c38a1c-f98b-4eb6-aaa9-30c8678a907d",
+              "port": "567f255d-c727-4ba6-8946-8a69d92d6dfe"
+            },
+            "target": {
+              "cell": "7bbbbd9e-009f-4763-b29f-a2f31ec8ccf9",
+              "port": "3c423e84-a405-4bc9-a5bf-a2584cd656ee"
+            },
+            "vertices": [
+              {
+                "x": 200,
+                "y": 235
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 40,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Uploaded documents",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "58f9c11c-8657-486b-8d44-61a6f07e2846",
+                  "title": "B05: Many large documents get the Ingestion Worker stuck processing them",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Uploaded documents"
+            ],
+            "id": "f934c655-08d6-40f9-b31d-a0eec7f0087d",
+            "source": {
+              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
+              "port": "3ab1b74f-bdfc-495d-a1a6-25ffd2bbb359"
+            },
+            "target": {
+              "cell": "2330a553-d3c0-4d33-9677-af50e4158b08",
+              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
+            },
+            "vertices": [
+              {
+                "x": 1490,
+                "y": 350
+              },
+              {
+                "x": 1535,
+                "y": 420
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 6
   }
 }
