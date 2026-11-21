@@ -48,11 +48,11 @@
                 "912157f9-75e0-4548-ad36-0884b99fb910",
                 "3d4b9f5e-c078-4f8f-8a5b-8805701350df",
                 "2089126d-7bb7-4a61-9724-54d337898199",
-                "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
                 "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
                 "5056fa96-c176-4116-950f-b2d0ab323454",
                 "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
-                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f"
+                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
+                "f8b2aa0a-f318-483a-8baf-f84ab627dd80"
               ],
               "containedElements": [
                 "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -63,6 +63,13 @@
                 "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
                 "edfdf35f-938b-4135-bb3a-fa293d5141eb"
               ]
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -985,8 +992,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "An attacker might phish a staff member's credentials through various means and then assume their identity through the identity provider (P1). The identity provider issues a valid token, so the portal accepts them. Then, the attacker is let through to access the tenant's data as a staff member would.",
+                  "mitigation": "Require MFA for all staff accounts on P1 and have device attestation and sign-in alerts from new devices and locations. So, the possession of a staff member's credentials does not allow unconditional access, and any anomalous sign-ins are flagged for review.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 5,
@@ -994,7 +1001,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 2,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -1924,56 +1931,6 @@
             "target": {
               "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
               "port": "1be3bbea-173b-4efc-ab5f-f21ff6f7b8e2"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           },
           {
@@ -2212,7 +2169,22 @@
                 "x": 200,
                 "y": 430
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -2344,8 +2316,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Staff members have the final send-off on when an email is sent, but no record is kept of who approved what. So, in the case that the \"wrong\" email is sent, there is no way to trace responsibilities back to a specific actor and fully observe what happened. ",
+                  "mitigation": "The service P4 could be extended to additionally log every single approval or denial with staff identifiers, as well as information about the emails themselves. Also, make S3 such that existing entries cannot be deleted or modified. Consequently, records cannot be altered by anyone and everything can be traced back to a staff member.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
@@ -2354,7 +2326,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "repudiation": 1,
+                "repudiation": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -2455,80 +2427,6 @@
               {
                 "x": 970,
                 "y": 710
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 31,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Submit tickets / PDF attachments",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "3ff2d42d-7995-4b91-9515-4b5b25c93664",
-                  "title": "B01: Malicious documents carry prompt-injection text",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Submit tickets / PDF attachments"
-            ],
-            "id": "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
-            "source": {
-              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
-              "port": "9e8f9c3c-90d4-4106-aa10-a68eec85519a"
-            },
-            "target": {
-              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 90
               }
             ]
           },
@@ -2783,8 +2681,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "P6 sends ticket content and actual passages from internal documents to an external LLM provider, which could potentially store or retain prompts and information. The consequence is that internal tenant data now lives outside of the Northstar trust boundary and could be exposed by a breach to the LLM provider. ",
+                  "mitigation": "Ensure that the provider has a \"no retention\" policy and agree on a policy surrounding data processing and how it can be observed. Also, P6 could strip any confidential information or identifiers before sending to the provider. This way, the overall amount of data leaving the Northstar trust boundary is less, and the provider is legally forbidden from retaining it, barring some loophole.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
@@ -2797,7 +2695,7 @@
               ],
               "threatFrequency": {
                 "tampering": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0
               }
             },
@@ -2988,192 +2886,81 @@
                 "x": 1535,
                 "y": 420
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 41,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Submit tickets / PDF attachments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3ff2d42d-7995-4b91-9515-4b5b25c93664",
+                  "title": "B01: Malicious documents carry prompt-injection text",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "In this scenario, an attacker uploads a malicious PDF with hidden prompt-injection instructions intended for an LLM. This document is treated like any other, so it is indexed and retrieved like normal. Later, if it's retrieved, the instructions might change the assistant summaries or proposed actions.",
+                  "mitigation": "Documents can be labeled as \"not trusted\" by the ingestion worker (P7) when indexing. Alternatively, data could be passed to the LLM (by P6) as quoted data, and the structure could enforce that such data cannot be treated as instructions. So, prompt injected text could change the wording of an output but not lead to any dangerous actions.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
               ],
-              "name": null
-            }
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ],
+              "threatFrequency": {
+                "tampering": 3,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Submit tickets / PDF attachments"
+            ],
+            "id": "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
+            "source": {
+              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
+              "port": "9e8f9c3c-90d4-4106-aa10-a68eec85519a"
+            },
+            "target": {
+              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
+              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
+            },
+            "vertices": [
+              {
+                "x": 560,
+                "y": 90
+              }
+            ]
           }
         ]
       }
