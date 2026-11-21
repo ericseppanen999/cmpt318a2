@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 570,
-              "y": 50.000000000000114
+              "x": 520,
+              "y": 450
             },
             "size": {
               "width": 1180,
@@ -45,17 +45,17 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "a89a782e-7568-4534-b71b-51b65e8996b2",
+                "34d56af0-15e0-48d0-af56-4c68ab120f45",
                 "912157f9-75e0-4548-ad36-0884b99fb910",
+                "fde2053c-3251-4d21-8277-8d9683c6f94f",
                 "3d4b9f5e-c078-4f8f-8a5b-8805701350df",
-                "2089126d-7bb7-4a61-9724-54d337898199",
-                "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
-                "5056fa96-c176-4116-950f-b2d0ab323454",
+                "923dd7f0-0c40-40ae-b733-8f791ea3ef62",
+                "f343df58-4c1c-4b11-bcf3-c1d83571396a",
                 "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
-                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
-                "f8b2aa0a-f318-483a-8baf-f84ab627dd80"
+                "f934c655-08d6-40f9-b31d-a0eec7f0087d",
+                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f"
               ],
               "containedElements": [
-                "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
                 "2330a553-d3c0-4d33-9677-af50e4158b08",
                 "4b427bcc-1b03-4e48-9ce1-5fc1a597e71e",
                 "af6150c6-9243-499d-ab8c-6d95835877d0",
@@ -656,7 +656,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Assistant Response"
@@ -832,7 +834,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Question and ticket context + tenant ID"
@@ -1911,7 +1915,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Create ticket"
@@ -2129,9 +2135,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Assistant response"
@@ -2356,7 +2360,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Access & action events"
@@ -2455,7 +2461,6 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
                 "234c965b-af23-4af8-9f6e-954548e9d3c0"
               ]
             },
@@ -2509,9 +2514,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Upload internal manuals"
@@ -2634,75 +2637,6 @@
             "target": {
               "cell": "edfdf35f-938b-4135-bb3a-fa293d5141eb",
               "port": "680a3d70-d9e0-4ec9-9440-b3c7087d84ad"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 37,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Question & selected passages",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "e0f1b83c-5e59-4382-a868-7e31da741f67",
-                  "title": "B02: Sensitive data is sent to the external LLM provider and potentially stored there",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "P6 sends ticket content and actual passages from internal documents to an external LLM provider, which could potentially store or retain prompts and information. The consequence is that internal tenant data now lives outside of the Northstar trust boundary and could be exposed by a breach to the LLM provider. ",
-                  "mitigation": "Ensure that the provider has a \"no retention\" policy and agree on a policy surrounding data processing and how it can be observed. Also, P6 could strip any confidential information or identifiers before sending to the provider. This way, the overall amount of data leaving the Northstar trust boundary is less, and the provider is legally forbidden from retaining it, barring some loophole.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
-                "24935bc3-0f15-4041-8363-f47323ae0a6c"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 2,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Question & selected passages"
-            ],
-            "id": "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
-            "source": {
-              "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
-              "port": "9ba1c9ff-6500-4dc9-b531-a02f8f631fc1"
-            },
-            "target": {
-              "cell": "3225946e-b151-4e43-9215-4f91b6d141b3",
-              "port": "75162ad6-8ace-48cb-955d-804b701aab98"
             }
           },
           {
@@ -2851,7 +2785,9 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
@@ -2870,16 +2806,6 @@
               "cell": "2330a553-d3c0-4d33-9677-af50e4158b08",
               "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
             },
-            "vertices": [
-              {
-                "x": 1490,
-                "y": 350
-              },
-              {
-                "x": 1535,
-                "y": 420
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -2889,7 +2815,17 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 1490,
+                "y": 350
+              },
+              {
+                "x": 1535,
+                "y": 420
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2929,7 +2865,7 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "In this scenario, an attacker uploads a malicious PDF with hidden prompt-injection instructions intended for an LLM. This document is treated like any other, so it is indexed and retrieved like normal. Later, if it's retrieved, the instructions might change the assistant summaries or proposed actions.",
+                  "description": "In the case that an attacker uploads some malicious PDF with hidden prompt-injection instructions intended for an LLM, the document is treated like any other, so it is indexed and retrieved like normal. Later, if it's retrieved, the instructions might be able to cause intended harm.",
                   "mitigation": "Documents can be labeled as \"not trusted\" by the ingestion worker (P7) when indexing. Alternatively, data could be passed to the LLM (by P6) as quoted data, and the structure could enforce that such data cannot be treated as instructions. So, prompt injected text could change the wording of an output but not lead to any dangerous actions.",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2937,11 +2873,9 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ],
+              "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 3,
+                "tampering": 4,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -2963,7 +2897,266 @@
                 "x": 560,
                 "y": 90
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 42,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Question & selected passages",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e0f1b83c-5e59-4382-a868-7e31da741f67",
+                  "title": "B02: Sensitive data is sent to the external LLM provider and potentially stored there",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "P6 sends ticket content and actual passages from internal documents to an external LLM provider, which could potentially store or retain prompts and information. The consequence is that internal tenant data now lives outside of the Northstar trust boundary and could be exposed by a breach to the LLM provider. ",
+                  "mitigation": "Ensure that the provider has a \"no retention\" policy and agree on a policy surrounding data processing and how it can be observed. Also, P6 could strip any confidential information or identifiers before sending to the provider. This way, the overall amount of data leaving the Northstar trust boundary is less, and the provider is legally forbidden from retaining it, barring some loophole.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
+                "24935bc3-0f15-4041-8363-f47323ae0a6c"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 2,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Question & selected passages"
+            ],
+            "id": "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
+            "source": {
+              "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
+              "port": "9ba1c9ff-6500-4dc9-b531-a02f8f631fc1"
+            },
+            "target": {
+              "cell": "3225946e-b151-4e43-9215-4f91b6d141b3",
+              "port": "75162ad6-8ace-48cb-955d-804b701aab98"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "Assumptions: The ticket service is part of the portal, staff approval occurs in the portal UI, audit events don't specify who (which staff member) approved/denied an action, the LLM providers data processing agreement is unspecified, staff sign-in doesn't require MFA, and the portal has no upload quotas on size or number."
