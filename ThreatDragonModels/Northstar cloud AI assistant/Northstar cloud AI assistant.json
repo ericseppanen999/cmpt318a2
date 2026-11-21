@@ -5,7 +5,7 @@
   "summary": {
     "title": "Northstar cloud AI assistant",
     "owner": "",
-    "description": "Assumptions: The ticket service is part of the portal, staff approval occurs in the portal UI, audit events don't specify who (which staff member) approved/denied an action, the LLM providers data processing agreement is unspecified, staff sign-in doesn't require MFA, and the portal has no upload quotas on size or number.",
+    "description": "Assumptions:\n- Ticket service is part of the portal\n- staff approval takes place inside the portal UI\n- audit events do not include who approved or denied a certain action\n- the data processing agreement of LLM providers undefined\n- the sign-in of staff members does not require MFA\n- the portal lacks file upload quotas on both size and number",
     "id": 0
   },
   "detail": {
@@ -3045,7 +3045,7 @@
             ]
           }
         ],
-        "description": "Assumptions: The ticket service is part of the portal, staff approval occurs in the portal UI, audit events don't specify who (which staff member) approved/denied an action, the LLM providers data processing agreement is unspecified, staff sign-in doesn't require MFA, and the portal has no upload quotas on size or number."
+        "description": ""
       }
     ],
     "diagramTop": 1,
