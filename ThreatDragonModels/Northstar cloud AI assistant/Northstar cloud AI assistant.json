@@ -21,8 +21,8 @@
         "cells": [
           {
             "position": {
-              "x": 520,
-              "y": 450
+              "x": 560,
+              "y": 40
             },
             "size": {
               "width": 1180,
@@ -45,17 +45,17 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "a89a782e-7568-4534-b71b-51b65e8996b2",
-                "34d56af0-15e0-48d0-af56-4c68ab120f45",
                 "912157f9-75e0-4548-ad36-0884b99fb910",
-                "fde2053c-3251-4d21-8277-8d9683c6f94f",
                 "3d4b9f5e-c078-4f8f-8a5b-8805701350df",
-                "923dd7f0-0c40-40ae-b733-8f791ea3ef62",
-                "f343df58-4c1c-4b11-bcf3-c1d83571396a",
+                "2089126d-7bb7-4a61-9724-54d337898199",
+                "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
+                "5056fa96-c176-4116-950f-b2d0ab323454",
                 "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
-                "f934c655-08d6-40f9-b31d-a0eec7f0087d",
-                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f"
+                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
+                "f8b2aa0a-f318-483a-8baf-f84ab627dd80"
               ],
               "containedElements": [
+                "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
                 "2330a553-d3c0-4d33-9677-af50e4158b08",
                 "4b427bcc-1b03-4e48-9ce1-5fc1a597e71e",
                 "af6150c6-9243-499d-ab8c-6d95835877d0",
@@ -656,9 +656,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Assistant Response"
@@ -834,9 +832,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Question and ticket context + tenant ID"
@@ -1010,7 +1006,7 @@
           {
             "position": {
               "x": 1400,
-              "y": 580
+              "y": 575
             },
             "size": {
               "width": 230,
@@ -1915,9 +1911,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Create ticket"
@@ -2135,7 +2129,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Assistant response"
@@ -2345,9 +2341,7 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
+              "trustBoundaryIds": []
             },
             "labels": [
               "Access & action events"
@@ -2446,6 +2440,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
                 "234c965b-af23-4af8-9f6e-954548e9d3c0"
               ]
             },
@@ -2499,7 +2494,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
             },
             "labels": [
               "Upload internal manuals"
@@ -2770,9 +2767,7 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ],
+              "trustBoundaryIds": [],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
@@ -2917,7 +2912,9 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ],
               "threatFrequency": {
                 "tampering": 5,
                 "informationDisclosure": 0,
