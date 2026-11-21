@@ -2965,7 +2965,8 @@
               }
             ]
           }
-        ]
+        ],
+        "description": "Assumptions: The ticket service is part of the portal, staff approval happens in the portal UI, audit events don't record which staff member approved or denied an action, the LLM providers data processing agreement is unspecified, staff sign-in doesn't require MFA, and the portal has no upload quotas on size or number."
       }
     ],
     "diagramTop": 1,
