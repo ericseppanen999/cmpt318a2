@@ -2863,94 +2863,6 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 43,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Submit tickets / PDF attachments",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "3ff2d42d-7995-4b91-9515-4b5b25c93664",
-                  "title": "B01: Malicious documents carry prompt-injection text",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "A critical threat to Northstar's operations is the threat of prompt injection by the upload of malicious documents. An attacker would be able to meticulously design PDFs with hidden instructions aimed to exploit an LLM's behaviour that would be entrusted as a genuine document by the system. This means that the malicious document would follow the entire system flow of indexing and retrieval. Consequently, results could be \"poisoned\" by the malicious documents, causing assistant summaries to be incorrect or dangerous actions to be taken.",
-                  "mitigation": "This problem can be best mitigated in two sections of the system. First, in the ",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ],
-              "threatFrequency": {
-                "tampering": 8,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Submit tickets / PDF attachments"
-            ],
-            "id": "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
-            "source": {
-              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
-              "port": "9e8f9c3c-90d4-4106-aa10-a68eec85519a"
-            },
-            "target": {
-              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
-            },
-            "vertices": [
-              {
-                "x": 260,
-                "y": 120
-              },
-              {
-                "x": 600,
-                "y": 70
-              }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
             "zIndex": 44,
             "connector": "smooth",
             "data": {
@@ -3011,6 +2923,84 @@
               {
                 "x": 1535,
                 "y": 550
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 45,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Submit tickets / PDF attachments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3ff2d42d-7995-4b91-9515-4b5b25c93664",
+                  "title": "B01: Malicious documents carry prompt-injection text",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "A critical threat to Northstar's operations is the threat of prompt injection by the upload of malicious documents. An attacker would be able to meticulously design PDFs with hidden instructions aimed to exploit an LLM's behaviour that would be entrusted as a genuine document by the system. This means that the malicious document would follow the entire system flow of indexing and retrieval. Consequently, results could be \"poisoned\" by the malicious documents, causing assistant summaries to be incorrect or dangerous actions to be taken.",
+                  "mitigation": "This problem can be best mitigated in two sections of the system. First, the ingestion worker (P7) should automatically label the data as external and therefore \"not trusted\" during it's regular indexing flow. Second, when P6 passes retrieved documents to the external LLM provider, it should be structured in such a way that it is clear that data within the documents should never be treated as instructions. With these two controls in place, the lethality and prevalence of prompt injection will surely decrease.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ],
+              "threatFrequency": {
+                "tampering": 9,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Submit tickets / PDF attachments"
+            ],
+            "id": "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
+            "source": {
+              "cell": "2831fa21-8708-432f-b898-1c3cfd4bb26d",
+              "port": "9e8f9c3c-90d4-4106-aa10-a68eec85519a"
+            },
+            "target": {
+              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
+              "port": "e169d47a-4979-4bd3-b737-33965f6f2263"
+            },
+            "vertices": [
+              {
+                "x": 260,
+                "y": 120
+              },
+              {
+                "x": 600,
+                "y": 70
               }
             ]
           }
