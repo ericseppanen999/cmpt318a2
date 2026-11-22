@@ -51,8 +51,8 @@
                 "58340b06-69da-4c47-8fb4-7b8eaeeda6f4",
                 "5056fa96-c176-4116-950f-b2d0ab323454",
                 "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
-                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
-                "f8b2aa0a-f318-483a-8baf-f84ab627dd80"
+                "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
+                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f"
               ],
               "containedElements": [
                 "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -2738,131 +2738,6 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 42,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Question & selected passages",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "e0f1b83c-5e59-4382-a868-7e31da741f67",
-                  "title": "B02: Sensitive data is sent to the external LLM provider and potentially stored there",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Since Northstar relies on an external LLM provider (P3) to return generated responses, the organization's surface area for attacks becomes larger if the LLM provider stores or retains tenant prompts and information. In the case that the external LLM provider does retain information for various reasons, then a breach of the provider is also capable of exposing internal tenant data.",
-                  "mitigation": "This threat can be best mitigated contractually. When choosing an LLM provider, Northstar should aim to choose solutions that provide either a \"no-retention\" policy, or provide room to negotiate retention conditions. With this in place, internal tenant data isn't stored by the LLM provider, so a breach to the provider does not expose any Northstar-specific information.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
-                "24935bc3-0f15-4041-8363-f47323ae0a6c"
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 5,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Question & selected passages"
-            ],
-            "id": "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
-            "source": {
-              "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
-              "port": "9ba1c9ff-6500-4dc9-b531-a02f8f631fc1"
-            },
-            "target": {
-              "cell": "3225946e-b151-4e43-9215-4f91b6d141b3",
-              "port": "75162ad6-8ace-48cb-955d-804b701aab98"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
-            "vertices": [
-              {
-                "x": 210,
-                "y": 950
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
             "zIndex": 44,
             "connector": "smooth",
             "data": {
@@ -2964,8 +2839,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "A critical threat to Northstar's operations is the threat of prompt injection by the upload of malicious documents. An attacker would be able to meticulously design PDFs with hidden instructions aimed to exploit an LLM's behaviour that would be entrusted as a genuine document by the system. This means that the malicious document would follow the entire system flow of indexing and retrieval. Consequently, results could be \"poisoned\" by the malicious documents, causing assistant summaries to be incorrect or dangerous actions to be taken.",
-                  "mitigation": "This problem can be best mitigated in two sections of the system. First, the ingestion worker (P7) should automatically label the data as external and therefore \"not trusted\" during it's regular indexing flow. Second, when P6 passes retrieved documents to the external LLM provider, it should be structured in such a way that it is clear that data within the documents should never be treated as instructions. With these two controls in place, the lethality and prevalence of prompt injection will surely decrease.",
+                  "description": "If an attacker were to upload documents (P5) that contain hidden prompt injection instructions intended for an LLM, they would be treated exactly the same as documents uploaded by a real customer (i.e., they would be indexed and retrieved like any other document). Down the line this could lead to unintended behaviour by the LLM through malicious tool calls or inaccurate responses, among others.",
+                  "mitigation": "The ingestion worker (P7) should label ALL uploaded documents as external (untrusted), and the assistant backend (P6) should structure the retrieved documents in a way that specifies that the documents cannot be treated as instructions. This way the severity and prevalence of prompt injection diminishes since hidden instructions are less likely to be executed. ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -2976,7 +2851,7 @@
                 "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
               ],
               "threatFrequency": {
-                "tampering": 9,
+                "tampering": 11,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -3184,10 +3059,190 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 46,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Question & selected passages",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e0f1b83c-5e59-4382-a868-7e31da741f67",
+                  "title": "B02: Sensitive data is sent to the external LLM provider and potentially stored there",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Since Northstar relies on an external LLM provider (P3) to return generated responses, the organization's surface area for attacks becomes larger if the LLM provider stores or retains tenant prompts and information. In the case that the external LLM provider does retain information for various reasons, then a breach of the provider is also capable of exposing internal tenant data.",
+                  "mitigation": "This threat can be best mitigated contractually. When choosing an LLM provider, Northstar should aim to choose solutions that provide either a \"no-retention\" policy, or provide room to negotiate retention conditions. With this in place, internal tenant data isn't stored by the LLM provider, so a breach to the provider does not expose any Northstar-specific information.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e",
+                "24935bc3-0f15-4041-8363-f47323ae0a6c"
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 5,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Question & selected passages"
+            ],
+            "id": "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
+            "source": {
+              "cell": "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
+              "port": "9ba1c9ff-6500-4dc9-b531-a02f8f631fc1"
+            },
+            "target": {
+              "cell": "3225946e-b151-4e43-9215-4f91b6d141b3",
+              "port": "75162ad6-8ace-48cb-955d-804b701aab98"
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 950
+              }
+            ]
           }
         ],
         "description": ""
