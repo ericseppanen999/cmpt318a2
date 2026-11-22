@@ -52,7 +52,8 @@
                 "5056fa96-c176-4116-950f-b2d0ab323454",
                 "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
                 "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
-                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f"
+                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
+                "ada617cd-4b99-4e06-abfb-3f98364fe134"
               ],
               "containedElements": [
                 "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -61,7 +62,8 @@
                 "af6150c6-9243-499d-ab8c-6d95835877d0",
                 "3e54d187-4ac8-4a64-8cfc-1244d7bb7d12",
                 "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
-                "edfdf35f-938b-4135-bb3a-fa293d5141eb"
+                "edfdf35f-938b-4135-bb3a-fa293d5141eb",
+                "9dcbcea8-7ee8-445f-a3de-1549f34b894a"
               ]
             }
           },
@@ -1896,52 +1898,6 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 24,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Create ticket",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Create ticket"
-            ],
-            "id": "923dd7f0-0c40-40ae-b733-8f791ea3ef62",
-            "source": {
-              "cell": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
-              "port": "1e4790bb-7346-4edd-97f7-f269161e95a2"
-            },
-            "target": {
-              "cell": "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
-              "port": "1be3bbea-173b-4efc-ab5f-f21ff6f7b8e2"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
             "zIndex": 25,
             "connector": "smooth",
             "data": {
@@ -2147,16 +2103,12 @@
             },
             "vertices": [
               {
-                "x": 880,
-                "y": 390
+                "x": 810,
+                "y": 380
               },
               {
-                "x": 720,
-                "y": 420
-              },
-              {
-                "x": 480,
-                "y": 430
+                "x": 420,
+                "y": 380
               },
               {
                 "x": 200,
@@ -2951,6 +2903,226 @@
               {
                 "x": 210,
                 "y": 950
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 1009,
+              "y": 330
+            },
+            "size": {
+              "width": 130,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "P8: Ticket Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "84df6cbc-0e35-4722-acac-0e04db77e608"
+                },
+                {
+                  "group": "right",
+                  "id": "08393e3f-a406-40ef-8a4b-d3d8768017af"
+                },
+                {
+                  "group": "bottom",
+                  "id": "cc7d1be6-2245-4fda-95d8-ec6a615f3064"
+                },
+                {
+                  "group": "left",
+                  "id": "7b82efd0-a67d-4754-bf81-54cd9f723f6e"
+                }
+              ]
+            },
+            "id": "9dcbcea8-7ee8-445f-a3de-1549f34b894a",
+            "zIndex": 47,
+            "data": {
+              "type": "tm.Process",
+              "name": "P8: Ticket Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 48,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
+              ]
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ada617cd-4b99-4e06-abfb-3f98364fe134",
+            "source": {
+              "x": 710,
+              "y": 460
+            },
+            "target": {
+              "cell": "9dcbcea8-7ee8-445f-a3de-1549f34b894a",
+              "port": "7b82efd0-a67d-4754-bf81-54cd9f723f6e"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 49,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Create ticket",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Create ticket"
+            ],
+            "id": "923dd7f0-0c40-40ae-b733-8f791ea3ef62",
+            "source": {
+              "cell": "9dcbcea8-7ee8-445f-a3de-1549f34b894a",
+              "port": "7b82efd0-a67d-4754-bf81-54cd9f723f6e"
+            },
+            "target": {
+              "cell": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
+              "port": "1e4790bb-7346-4edd-97f7-f269161e95a2"
+            },
+            "vertices": [
+              {
+                "x": 980,
+                "y": 480
               }
             ]
           }
