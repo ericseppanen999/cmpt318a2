@@ -52,8 +52,7 @@
                 "5056fa96-c176-4116-950f-b2d0ab323454",
                 "8e1a6d34-fe0e-4ff3-87f6-33347e1291c4",
                 "f8b2aa0a-f318-483a-8baf-f84ab627dd80",
-                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f",
-                "ada617cd-4b99-4e06-abfb-3f98364fe134"
+                "d34cfe0d-4c77-447e-a055-1e8ddc92b45f"
               ],
               "containedElements": [
                 "38d6c7f2-79e6-4aa3-b52a-3ad0b3fba856",
@@ -3042,54 +3041,6 @@
             },
             "width": 200,
             "height": 100,
-            "zIndex": 48,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Create ticket",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
-              ]
-            },
-            "labels": [
-              "Create ticket"
-            ],
-            "id": "ada617cd-4b99-4e06-abfb-3f98364fe134",
-            "source": {
-              "x": 710,
-              "y": 460
-            },
-            "target": {
-              "cell": "9dcbcea8-7ee8-445f-a3de-1549f34b894a",
-              "port": "7b82efd0-a67d-4754-bf81-54cd9f723f6e"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
             "zIndex": 49,
             "connector": "smooth",
             "data": {
@@ -3125,6 +3076,52 @@
                 "y": 400
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 50,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Create ticket",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Create ticket"
+            ],
+            "id": "ada617cd-4b99-4e06-abfb-3f98364fe134",
+            "source": {
+              "cell": "e398c25b-b2a8-4bc4-b77e-dff4b6d86f56",
+              "port": "1e4790bb-7346-4edd-97f7-f269161e95a2"
+            },
+            "target": {
+              "cell": "9dcbcea8-7ee8-445f-a3de-1549f34b894a",
+              "port": "7b82efd0-a67d-4754-bf81-54cd9f723f6e"
+            }
           }
         ],
         "description": "Assumptions:   The current external LLM provider has an unspecified data retention policy There are no limits on how many documents a customer can upload or how large documents can be The audit log doesn't specify which staff member approved or denied a tool call Staff approve tool calls inside the portal UI MFA isn't enabled for staff sign-in"
