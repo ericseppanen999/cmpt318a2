@@ -1107,13 +1107,6 @@
                 "spoofing": 0,
                 "repudiation": 3
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2570,8 +2563,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "A CSV being downloaded by the volunteer for weekly delivery records can be vulnerable to attackers which can alter the file before it reaches the recipient. The CSV can have its addresses routed to unintended locations where theft can occur. The weekly delivery list does not have an integrity check to ensure that the file details have not been affected. ",
-                  "mitigation": "Potential mitigations:\n- Encryption for CSV download requests/in-transit \n- Digital Certificates / Signatures mandatory on all file edits",
+                  "description": "A CSV being downloaded by the volunteer for weekly delivery records might have been tampered with by an attacker if they have edit access in the folder. The CSV can have its addresses routed to unintended locations where theft can occur. The weekly delivery list does not have an integrity check to ensure that the file details have not been affected.",
+                  "mitigation": "Ensure that only the coordinator has edit and upload access (in S2) and everyone else can only view (and download). Now, only the coordinator could edit the file which lessens the surface area for attacks.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 3,
@@ -2582,7 +2575,7 @@
                 "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
               ],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
