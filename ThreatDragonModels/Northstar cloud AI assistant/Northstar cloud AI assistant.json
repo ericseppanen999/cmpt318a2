@@ -2789,14 +2789,13 @@
               "cell": "3225946e-b151-4e43-9215-4f91b6d141b3",
               "port": "75162ad6-8ace-48cb-955d-804b701aab98"
             },
-            "vertices": [
-              {
-                "x": 210,
-                "y": 950
-              }
-            ],
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
                 "boundary",
                 "button-remove",
                 "vertices",
@@ -2839,7 +2838,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 210,
+                "y": 950
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -2879,8 +2884,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "In order to attempt to breach confidential information or disrupt operations, a malicious actor could upload documents with hidden prompt injection instructions. In this case, the malicious document is treated like any other genuine document, so it proceeds with the indexing and retrieval flow. Later, if the document is retrieved, its malicious intended behaviour could alter instructions or assistant summaries to be inaccurate.",
-                  "mitigation": "To mitigate prompt injected documents, all customer documents could be passed to the ingestion worker (P6) as \"not trusted\" when indexing. Additionally, the assistant backend (P6) could pass the passages retrieved from the vector store (S3) in some structure that clarifies that they should not be considered as instructions. This way, it is less likely that malicious documents could cause harmful instructions to execute.",
+                  "description": "A critical threat to Northstar's operations is the threat of prompt injection by the upload of malicious documents. An attacker would be able to meticulously design PDFs with hidden instructions aimed to exploit an LLM's behaviour that would be entrusted as a genuine document by the system. This means that the malicious document would follow the entire system flow of indexing and retrieval. Consequently, results could be \"poisoned\" by the malicious documents, causing assistant summaries to be incorrect or dangerous actions to be taken.",
+                  "mitigation": "This problem can be best mitigated in two sections of the system. First, in the ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 1,
@@ -2891,7 +2896,7 @@
                 "e74de8c8-e308-4f6f-b423-7a1ed31ee96e"
               ],
               "threatFrequency": {
-                "tampering": 7,
+                "tampering": 8,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -2917,7 +2922,17 @@
                 "x": 600,
                 "y": 70
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
