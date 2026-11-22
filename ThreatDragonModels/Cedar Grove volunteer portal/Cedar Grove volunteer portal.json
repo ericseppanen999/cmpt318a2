@@ -153,9 +153,9 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "be3b33c3-3509-4df8-8d55-2ad4173cfbd7",
                 "bdf72f3b-d357-4f85-bc64-0ad74c887b6a",
-                "94c19058-7c39-4c83-850f-4e28c05d5344"
+                "94c19058-7c39-4c83-850f-4e28c05d5344",
+                "be3b33c3-3509-4df8-8d55-2ad4173cfbd7"
               ],
               "containedElements": [
                 "a5e97049-3cd2-485f-8db6-b843c3740727"
@@ -533,84 +533,6 @@
               {
                 "x": 210,
                 "y": 1090
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Download CSV",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "03a39a8e-5fcb-4dbf-b496-712e04f49a78",
-                  "title": "A02: Compromised exported CSVs",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "A CSV being downloaded by the volunteer for weekly delivery records can be vulnerable to attackers which can alter the file before it reaches the recipient. The CSV can have its addresses routed to unintended locations where theft can occur. The weekly delivery list does not have an integrity check to ensure that the file details have not been affected. ",
-                  "mitigation": "Potential mitigations:\n- Encryption for CSV download requests/in-transit \n- Digital Certificates / Signatures mandatory on all file edits",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
-              ],
-              "threatFrequency": {
-                "tampering": 2,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Download CSV"
-            ],
-            "id": "be3b33c3-3509-4df8-8d55-2ad4173cfbd7",
-            "source": {
-              "cell": "a5e97049-3cd2-485f-8db6-b843c3740727",
-              "port": "e649e483-7316-4b31-80c1-6eff6bfc9ef0"
-            },
-            "target": {
-              "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
-              "port": "63ac6e38-a556-4636-af64-bf9a6c825781"
-            },
-            "vertices": [
-              {
-                "x": 360,
-                "y": 830
-              },
-              {
-                "x": 340,
-                "y": 870
               }
             ]
           },
@@ -1173,8 +1095,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Repudiation",
-                  "description": "Volunteers currently share one dispatch login account to downloading the weekly delivery CSVs. There are exported lists contained in the shared folder which any volunteer can access through the phone. Currently, there is no audit log when accessing the information nor tracking of individual login location/identity. ",
-                  "mitigation": "Possible mitigations:\n- Denying login access from unapproved and suspicious devices and/or locations\n- Audit log for login activity & weekly delivery CSVs requested by each individual",
+                  "description": "Volunteers currently share one dispatch login account to download the weekly delivery CSVs. There are exported lists contained in the shared folder which any volunteer can access through the phone. Currently, there is no audit log when accessing the information nor tracking of individual login location/identity so in the case of a breach, actions cannot be traced back to a specific volunteer.",
+                  "mitigation": "Deny login access from unapproved and suspicious devices and/or locations and implement individual logins instead of the dispatch login, with logging on downloads. Now, suspicious logins are blocked and each volunteer has their own login, so downloads can be traced back to them.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 6,
@@ -1183,8 +1105,15 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "repudiation": 2
+                "repudiation": 3
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2539,8 +2468,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
-                  "description": "A lost/stolen/compromised phone exposes the full delivery record CSV whether that be through malware or simply a weak/lack of password. The weekly delivery list is downloaded through the portal or through the shared folder, and then stays on the personal phone indefinitely, which Cedar Grove doesn't manage. These files contain important information about clients, and therefore exposes vulnerable people.",
-                  "mitigation": "Potential mitigations:\n- Make a volunteer policy that suggests biometric access on personal devices which download CSVs. This stops a lost phone from being opened. \n- Limit the data exposed in the export to just delivery information. This way, if a file is compromised, there is less sensitive information exposed.",
+                  "description": "Volunteers download the weekly delivery CSV to their personal phones, where it stays indefinitely. If a phone is lost or compromised, an attacker could gain full access to the exported CSV containing confidential information.",
+                  "mitigation": "Recommend that volunteer phones require biometric access such as fingerprinting or facial recognition or at least ensure a password is set. One could also limit the CSV to only the fields which contain information required for deliveries. Combining both, a breach is both less likely and less severe since there is an additional layer of security and less information.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 2,
@@ -2550,16 +2479,9 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 4,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2609,6 +2531,84 @@
               "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
               "port": "b92802ed-e7d9-40f1-8a33-e0d18f0cf3c1"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 41,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Download CSV",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "03a39a8e-5fcb-4dbf-b496-712e04f49a78",
+                  "title": "A02: Compromised exported CSVs",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "A CSV being downloaded by the volunteer for weekly delivery records can be vulnerable to attackers which can alter the file before it reaches the recipient. The CSV can have its addresses routed to unintended locations where theft can occur. The weekly delivery list does not have an integrity check to ensure that the file details have not been affected. ",
+                  "mitigation": "Potential mitigations:\n- Encryption for CSV download requests/in-transit \n- Digital Certificates / Signatures mandatory on all file edits",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "5f84aa18-a365-4dad-bf45-5ebcc9267a95"
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Download CSV"
+            ],
+            "id": "be3b33c3-3509-4df8-8d55-2ad4173cfbd7",
+            "source": {
+              "cell": "a5e97049-3cd2-485f-8db6-b843c3740727",
+              "port": "e649e483-7316-4b31-80c1-6eff6bfc9ef0"
+            },
+            "target": {
+              "cell": "e0edf123-5a8c-4343-8f35-a73daac2b965",
+              "port": "63ac6e38-a556-4636-af64-bf9a6c825781"
+            },
+            "vertices": [
+              {
+                "x": 360,
+                "y": 830
+              },
+              {
+                "x": 340,
+                "y": 870
+              }
+            ]
           }
         ],
         "description": "Assumptions: The shared folder is on some third-party cloud service. Also, volunteers can see any file in it (there are no special permissions) but only the coordinator manages sharing and upload. Some hosting provider runs the servers and database for Cedar Grove. CSVs stay indefinitely in the shared folder and on phones. There's no retention/deletion policy."
