@@ -403,8 +403,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "Delivery requests are processed through the web form where client information can be input. These delivery requests entered on the form are unprotected from external users (attackers). These forms are prone to unauthorized modification which can alter client information which can affect confirmation status and client information storage.",
-                  "mitigation": "Possible mitigations:\n- Encrypted web form in transit\n- Digital Signature on each form submission",
+                  "description": "Delivery requests are processed through the web form where client information can be input. These delivery requests entered on the form could contain SQL or web-form injection that could modify or delete client data (in S1). These forms are prone to unauthorized modification which can alter client information which can affect confirmation status and client information storage.",
+                  "mitigation": "In the webform (P1), use parameterized queries and preprocess inputs to trim and flag potentially harmful inputs (look for keywords like DELETE, DROP, ALTER, etc) so that web form inputs are now treated as text that can't modify or delete data in S1.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
@@ -413,21 +413,12 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -660,8 +651,8 @@
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Denial of service",
-                  "description": "Cedar Grove uses the external email service to send confirmation emails to the delivery recipients. This external service currently does not have a backup server to rely on. If the service experiences denial of service, it can delay or even make confirmation emails unavailable, where delivery recipients may not receive confirmations. ",
-                  "mitigation": "Possible mitigations:\n- Create backup servers that allows confirmation emails to be sent if the main service is unavailable\n- Set up an intermediary service to determine verify real user legitimacy ",
+                  "description": "Cedar Grove uses the external email service (P3) to send confirmation emails to the delivery recipients. This external service has no known backup server to rely on. If the service experiences denial of service (through an attack or simply an outage), it can delay or even make confirmation emails unavailable, where delivery recipients may not receive confirmations.",
+                  "mitigation": "Ensure that a backup email provider is configured (in P1) which allows confirmation emails to be sent if the main service is unavailable and make sure that requests that couldn't be delivered are queued to be retried when the service(s) are back online. Implementing this makes it so that no emails are permanently lost in the event of an outage, which is also less likely due to the backup provider.",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
@@ -673,7 +664,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1,
+                "denialOfService": 3,
                 "elevationOfPrivilege": 0
               }
             }
