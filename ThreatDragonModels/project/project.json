@@ -46,16 +46,17 @@
               "crossingFlows": [
                 "f165fef0-95b2-4cf1-927b-774b8c0d54dc",
                 "9d534f63-650b-41e5-a695-624d6d786131",
-                "31354f53-2553-4796-9d18-b19811d20fbb",
                 "7d8177e5-0105-43e3-b70e-fae41e515524",
                 "2ddcdd3a-6c61-4a08-adf3-5958ee4f566d",
+                "31354f53-2553-4796-9d18-b19811d20fbb",
                 "9072b948-b94a-4f7b-9a7b-7170006ecd51",
                 "46ac6392-41fe-4c88-9640-593b3b7bc90f",
                 "a8126063-91d8-4957-9872-2577a85b407b",
                 "a988deaa-966c-4e4b-b3e4-3ed4279b8668",
                 "10260fae-0fbe-4dd1-ad68-e02f9603991c",
                 "e453f0c8-b084-4235-8aff-6bfe7c6be167",
-                "8442ecc8-4d89-47b1-bb14-b644af3e9754"
+                "8442ecc8-4d89-47b1-bb14-b644af3e9754",
+                "bfd85379-7cc7-45f7-be3a-124ed13ecf2c"
               ],
               "containedElements": [
                 "116f5318-cd9e-488a-bf26-3beddb24a6d9",
@@ -1750,84 +1751,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Session token",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "db0939b7-a190-4c25-ba04-d01790f5dd6c",
-                  "title": "New STRIDE threat",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "9d712ff8-815b-4c01-b4be-da44a62d8887"
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Session token"
-            ],
-            "id": "31354f53-2553-4796-9d18-b19811d20fbb",
-            "source": {
-              "cell": "116f5318-cd9e-488a-bf26-3beddb24a6d9",
-              "port": "b875e175-d9a6-42e8-8366-eb9218e5715c"
-            },
-            "target": {
-              "cell": "3067e470-19a3-4dfb-ad4c-9e79ca28fd65",
-              "port": "b8316440-7712-4159-af05-ff492aa1ebcb"
-            },
-            "vertices": [
-              {
-                "x": 470,
-                "y": 380
-              },
-              {
-                "x": 350,
-                "y": 380
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -2048,6 +1971,84 @@
               {
                 "x": 680,
                 "y": 700
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Session token",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "db0939b7-a190-4c25-ba04-d01790f5dd6c",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "9d712ff8-815b-4c01-b4be-da44a62d8887"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Session token"
+            ],
+            "id": "31354f53-2553-4796-9d18-b19811d20fbb",
+            "source": {
+              "cell": "116f5318-cd9e-488a-bf26-3beddb24a6d9",
+              "port": "b875e175-d9a6-42e8-8366-eb9218e5715c"
+            },
+            "target": {
+              "cell": "3067e470-19a3-4dfb-ad4c-9e79ca28fd65",
+              "port": "b8316440-7712-4159-af05-ff492aa1ebcb"
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 380
+              },
+              {
+                "x": 350,
+                "y": 380
               }
             ]
           },
@@ -7290,6 +7291,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 77,
             "ports": {
               "groups": {
                 "top": {
@@ -7373,7 +7375,6 @@
               ]
             },
             "id": "3f4c3e0b-1ce0-4fc2-b269-6150c026ae18",
-            "zIndex": 77,
             "data": {
               "type": "tm.Process",
               "name": "P17\nOn-prem\ndoor system",
@@ -7452,7 +7453,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -7468,37 +7470,64 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Emails",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "2bff7acd-1ef9-44af-97bb-96a6fe6a4a9a",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "9d712ff8-815b-4c01-b4be-da44a62d8887"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
-              "Data Flow"
+              "Emails"
             ],
             "id": "bfd85379-7cc7-45f7-be3a-124ed13ecf2c",
             "source": {
-              "x": 560,
-              "y": 500
+              "cell": "b93656da-f023-4eda-9a85-dc4e2576cf1a",
+              "port": "83dec9f8-ca48-4cbd-a60b-267a65adf51b"
             },
             "target": {
               "cell": "3067e470-19a3-4dfb-ad4c-9e79ca28fd65",
               "port": "b8316440-7712-4159-af05-ff492aa1ebcb"
-            }
+            },
+            "vertices": [
+              {
+                "x": 510,
+                "y": 450
+              }
+            ]
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
